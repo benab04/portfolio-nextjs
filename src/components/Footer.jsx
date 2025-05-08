@@ -10,7 +10,7 @@ const Footer = () => {
                         <h3 className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
                             Ben Abraham Biju
                         </h3>
-                        <p className="text-gray-400 mt-1">Full Stack Developer & UI/UX Enthusiast</p>
+                        <p className="text-gray-400 mt-1">Full Stack Developer & ML Enthusiast</p>
                     </div>
 
                     <div className="flex flex-col md:flex-row gap-6 md:gap-12">

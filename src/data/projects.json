@@ -20,6 +20,84 @@
             "show": true
         },
         {
+            "title": "Full Stack Development Internship",
+            "description": "Developed a comprehensive video conferencing solution using Zoom's Video SDK",
+            "image": "/images/interwiu_work.png",
+            "keywords": [
+                "ReactJS",
+                "NodeJS",
+                "ExpressJS",
+                "MongoDB",
+                "Zoom SDK"
+            ],
+            "type": "Internship",
+            "brand": {
+                "name": "interwiu.com",
+                "logo": "/images/interwiu.jpeg"
+            },
+            "details": {
+                "overview": "A full-featured video conferencing module with real-time communication capabilities",
+                "role": "Full Stack Developer Intern",
+                "duration": "June 2024 - December 2024",
+                "technologies": [
+                    "ReactJS",
+                    "Zoom Video SDK",
+                    "JavaScript",
+                    "DOM Manipulation"
+                ],
+                "highlights": [
+                    "Implemented core features: video, audio, chat and screen sharing",
+                    "Developed media monitoring timers reducing session costs by 30%",
+                    "Optimized performance through efficient React Hooks usage",
+                    "Created flexible coupon code system for partner institutions"
+                ]
+            },
+            "links": {
+                "deployed": "https://interwiu.com",
+                "source": null
+            },
+            "show": true
+        },
+        {
+            "title": "Interfacial Tension Measurement GUI",
+            "description": "Developed a GUI-based system for calculating interfacial tension of pendant droplets",
+            "image": "/images/sric_gui.webp",
+            "keywords": [
+                "Python",
+                "PyQt5",
+                "OpenCV",
+                "Arduino"
+            ],
+            "type": "Research Project",
+            "brand": {
+                "name": "IIT Kharagpur",
+                "logo": "/images/iitkgp.png"
+            },
+            "details": {
+                "overview": "A comprehensive system for measuring interfacial tension using computer vision",
+                "role": "Research Intern",
+                "duration": "April 2024 - May 2024",
+                "technologies": [
+                    "Python",
+                    "PyQt5",
+                    "OpenCV",
+                    "Arduino",
+                    "Canny Edge Detection"
+                ],
+                "highlights": [
+                    "Redesigned Arduino circuit for industrial pressure sensor with moving average algorithm",
+                    "Developed PyQt5 GUI for real-time droplet analysis",
+                    "Implemented Canny edge detection for shape factor determination",
+                    "Created interactive UI controls for enhanced data accuracy"
+                ]
+            },
+            "links": {
+                "deployed": null,
+                "source": null
+            },
+            "show": true
+        },
+        {
             "title": "Dynamic Elemental Mapping on Moon",
             "description": "Interactive 3D moon model using Three.js, showcasing element maps and important sites, with toggleable satellite and main camera views.",
             "image": "/images/dynamicmappingofmoon.png",
@@ -69,7 +147,7 @@
                 "D3JS",
                 "Collaborative Filtering"
             ],
-            "type": "Web Application",
+            "type": "National Science Week Hackathon",
             "brand": null,
             "details": {
                 "overview": "A full-stack application for recommending optimal breadth courses using collaborative filtering",
@@ -95,76 +173,6 @@
             "show": true
         },
         {
-            "title": "Algorithm to Code Converter",
-            "description": "Based on a prompt or sequence of algorithms given by a user, the corresponding code in a variety of languages will be generated.",
-            "image": "/images/Algorithm.png",
-            "keywords": [
-                "ReactJS",
-                "Django",
-                "RestAPI"
-            ],
-            "type": "Web Application",
-            "brand": null,
-            "details": {
-                "overview": "An AI-powered tool that converts algorithm descriptions into executable code",
-                "role": "Full Stack Developer",
-                "duration": "2023",
-                "technologies": [
-                    "ReactJS",
-                    "Django",
-                    "REST API"
-                ],
-                "highlights": [
-                    "Multi-language code generation",
-                    "Natural language processing",
-                    "Real-time code conversion",
-                    "Interactive user interface"
-                ]
-            },
-            "links": {
-                "deployed": "https://algorithm-code.netlify.app/",
-                "source": "https://github.com/benab04/Algorithm-Code-Generator-Frontend"
-            },
-            "show": true
-        },
-        {
-            "title": "Sudoku Solver",
-            "description": "Implemented a pipeline combining perspective transform and CNN for Sudoku grid digit extraction, followed by Constraint Programming with CPLEX in Python for solving Sudoku puzzles.",
-            "image": "/images/Sudoku.png",
-            "keywords": [
-                "ReactJS",
-                "Django",
-                "CNN",
-                "OpenCV",
-                "CPLEX"
-            ],
-            "type": "Deep Learning",
-            "brand": null,
-            "details": {
-                "overview": "An AI-powered Sudoku solver using computer vision and constraint programming",
-                "role": "Full Stack Developer",
-                "duration": "2023",
-                "technologies": [
-                    "ReactJS",
-                    "Django",
-                    "CNN",
-                    "OpenCV",
-                    "CPLEX"
-                ],
-                "highlights": [
-                    "CNN-based digit recognition",
-                    "Perspective transform for grid detection",
-                    "Constraint programming for solving",
-                    "Real-time solution generation"
-                ]
-            },
-            "links": {
-                "deployed": "https://sudoku-solver-benab04.netlify.app/",
-                "source": "https://github.com/benab04/Sudoku-Solver-Frontend"
-            },
-            "show": true
-        },
-        {
             "title": "Marico Market Analysis",
             "description": "Leveraged Python pipelines for comprehensive data analyses, automated data tagging with Labelbox and SuperAnnotate for precision, and developed a ReactJS and Firebase frontend with D3JS for dynamic data visualization.",
             "image": "/images/marico.png",
@@ -175,7 +183,7 @@
                 "Python",
                 "Web Scraping"
             ],
-            "type": "Web Application",
+            "type": "Freelance Project",
             "brand": {
                 "name": "Marico Pvt. Limited",
                 "logo": "/images/marico_logo.png"
@@ -267,6 +275,76 @@
             "links": {
                 "deployed": "https://digit-recognition-benab04.streamlit.app/",
                 "source": "https://github.com/benab04/digit-recognition-streamlit"
+            },
+            "show": true
+        },
+        {
+            "title": "Algorithm to Code Converter",
+            "description": "Based on a prompt or sequence of algorithms given by a user, the corresponding code in a variety of languages will be generated.",
+            "image": "/images/Algorithm.png",
+            "keywords": [
+                "ReactJS",
+                "Django",
+                "RestAPI"
+            ],
+            "type": "Web Application",
+            "brand": null,
+            "details": {
+                "overview": "An AI-powered tool that converts algorithm descriptions into executable code",
+                "role": "Full Stack Developer",
+                "duration": "2023",
+                "technologies": [
+                    "ReactJS",
+                    "Django",
+                    "REST API"
+                ],
+                "highlights": [
+                    "Multi-language code generation",
+                    "Natural language processing",
+                    "Real-time code conversion",
+                    "Interactive user interface"
+                ]
+            },
+            "links": {
+                "deployed": "https://algorithm-code.netlify.app/",
+                "source": "https://github.com/benab04/Algorithm-Code-Generator-Frontend"
+            },
+            "show": true
+        },
+        {
+            "title": "Sudoku Solver",
+            "description": "Implemented a pipeline combining perspective transform and CNN for Sudoku grid digit extraction, followed by Constraint Programming with CPLEX in Python for solving Sudoku puzzles.",
+            "image": "/images/Sudoku.png",
+            "keywords": [
+                "ReactJS",
+                "Django",
+                "CNN",
+                "OpenCV",
+                "CPLEX"
+            ],
+            "type": "Deep Learning",
+            "brand": null,
+            "details": {
+                "overview": "An AI-powered Sudoku solver using computer vision and constraint programming",
+                "role": "Full Stack Developer",
+                "duration": "2023",
+                "technologies": [
+                    "ReactJS",
+                    "Django",
+                    "CNN",
+                    "OpenCV",
+                    "CPLEX"
+                ],
+                "highlights": [
+                    "CNN-based digit recognition",
+                    "Perspective transform for grid detection",
+                    "Constraint programming for solving",
+                    "Real-time solution generation"
+                ]
+            },
+            "links": {
+                "deployed": "https://sudoku-solver-benab04.netlify.app/",
+                "source": "https://github.com/benab04/Sudoku-Solver-Frontend"
             },
             "show": true
         },
