@@ -2,142 +2,257 @@
     "education": [
         {
             "title": "Bachelor of Technology",
-            "subtitle": "Computer Science and Engineering",
-            "period": "2021 - 2025",
+            "subtitle": "Industrial and Systems Engineering",
+            "period": "2022 - 2026",
             "description": "Indian Institute of Technology Kharagpur",
             "details": [
-                "CGPA: 8.5/10",
-                "Relevant Coursework: Data Structures, Algorithms, Database Systems"
+                "CGPA: 9.15/10",
+                "Achieved Department Change to Industrial and Systems Engineering by being in the top 10% of a batch of more than 1800 students"
+            ]
+        },
+        {
+            "title": "ISC",
+            "subtitle": "High School",
+            "period": "2022",
+            "description": "Kuriakose Elias English Medium School",
+            "details": [
+                "Percentage: 98.25%"
+            ]
+        },
+        {
+            "title": "ICSE",
+            "subtitle": "Secondary School",
+            "period": "2020",
+            "description": "Mar Thoma Residential School",
+            "details": [
+                "Percentage: 97.4%"
             ]
         }
     ],
     "experience": [
         {
-            "title": "Strategy and Consulting Intern",
-            "subtitle": "Accenture",
-            "period": "Summer 2023",
-            "description": "Worked on developing and maintaining web applications",
+            "title": "Full Stack Developer Intern",
+            "subtitle": "interwiu.com",
+            "period": "June 2024 - December 2024",
+            "description": "Developed video conferencing solutions and website features",
             "details": [
-                "Developed new features using React and Node.js",
-                "Collaborated with team members on project planning and execution"
+                "Developed a video conferencing module using Zoom's Video SDK in React.js with core features like video, audio, chat and screen sharing",
+                "Incorporated media monitoring timers using event listeners and an idle timer functionality, which cut down session costs by over 30%",
+                "Performed DOM manipulation using React Hooks efficiently avoiding re-renders, eliminating glitches and improving website performance",
+                "Designed a new coupon code pattern for partner institutions to give multiple discount values using a single coupon for different sessions"
+            ]
+        },
+        {
+            "title": "Research Intern",
+            "subtitle": "Indian Institute of Technology, Kharagpur",
+            "period": "April 2024 - May 2024",
+            "description": "Principal Guide: Prof. Vishnu C. Nair, Deysarkar Centre of Excellence in Petroleum Engineering",
+            "details": [
+                "Redesigned an Arduino circuit for a 4-20mA industrial pressure sensor, using a moving average algorithm for stable pressure logging",
+                "Developed a PyQt5 GUI for calculating interfacial tension of pendant droplets, with real-time capturing from a continuous camera feed",
+                "Utilized Canny edge detection and bounding box technique to determine the shape factors for both inverted and non-inverted drops",
+                "Implemented UI controls including sliders for contrast adjustment and bounding offsets, enhancing data accuracy in experimental setups"
+            ]
+        },
+        {
+            "title": "Development Team Member",
+            "subtitle": "Inter IIT Tech Meet 13.0 | IIT Kharagpur",
+            "period": "October 2024 - December 2024",
+            "description": "Led development for ISRO problem statement",
+            "details": [
+                "Led end-to-end development and deployment of a website for ISRO problem statement, using AWS EC2 for backend and Netlify for frontend",
+                "Coordinated with team members, securing second place for the problem statement and contributing to an overall gold in the event"
+            ]
+        },
+        {
+            "title": "Student Member",
+            "subtitle": "Students' Branding and Relations Cell | Office of Alumni Affairs and Branding | IIT Kharagpur",
+            "period": "April 2023 - May 2024",
+            "description": "Managed website development and event organization",
+            "details": [
+                "Collaborated with team to develop the Young Innovators Program (yip.iitkgp.ac.in) and SBRC (barc.iitkgp.ac.in) websites from scratch",
+                "Conducted the Young Innovators Program 2023, with 1000+ registrations (35% YOY growth); organized guest lectures & exhibitions"
+            ]
+        },
+        {
+            "title": "Embedded Team Member",
+            "subtitle": "Aerial Robotics Kharagpur",
+            "period": "August 2023 - Present",
+            "description": "Worked on drone simulation and team management",
+            "details": [
+                "Initiated and developed the Gazebo simulation for acrylic window traversal of a drone using ROS packages and sensors, for IMAV 2024",
+                "Recruited and trained first year students through aptitude and subject tests, coordinating task rounds and conducting personal interviews"
             ]
         }
     ],
     "projects": [
         {
-            "title": "Dynamic Elemental Mapping on Moon",
-            "period": "2023",
-            "description": "A comprehensive web application for visualizing lunar elemental data",
+            "title": "Dynamic Elemental Mapping of Moon",
+            "period": "October 2024 - December 2024",
+            "description": "Inter IIT Tech Meet 13.0",
             "details": [
-                "Technologies used: React, Node.js, MongoDB, GIS mapping",
-                "Implemented interactive visualization features for scientific data analysis"
+                "Built a dashboard that overlays static and dynamic elemental maps on a moon using Three.js including sophisticated animations",
+                "Implemented a live mode where data is scraped from ISRO website and tiles are updated based on position of satellite over the moon",
+                "Created a file upload functionality where users can upload FITS files to the Django backend and get the updated tiles with new data",
+                "Developed and published a package Astro3D, containing ready-to-use detailed models of celestial bodies, minimizing effort of development"
+            ]
+        },
+        {
+            "title": "Django library for Network Log Anomaly Detection",
+            "period": "2023-2024",
+            "description": "Under Prof. Sayak Roychowdhury",
+            "details": [
+                "Trained multiple supervised models on the UNSW dataset, to classify network logs as attack and normal traffic and evaluated model metrics",
+                "Performed 2-Factorial Design on the dataset to study main and interaction effects and applied SHAP on the best model for feature selection",
+                "Developed Django decorator functions to block attack IPs using network logs, and published the library to PyPI as django-attack-blocker"
             ]
         },
         {
             "title": "Breadth Selection Tool",
             "period": "2023",
-            "description": "Tool for optimizing course selection based on academic breadth requirements",
+            "description": "National Science Week Hackathon",
             "details": [
-                "Technologies used: JavaScript, Python, SQL",
-                "Automated the course selection process, reducing planning time by 70%"
+                "Created a Full Stack Breadth Course Recommendation Tool",
+                "Achieved 2nd position in the National Science Week Hackathon"
             ]
         }
     ],
     "skills": {
         "languages": [
-            "JavaScript",
-            "TypeScript",
+            "C",
+            "C++",
             "Python",
-            "Java",
-            "C/C++",
-            "SQL",
-            "HTML/CSS"
+            "JavaScript"
         ],
         "frameworks": [
             "React.js",
-            "Next.js",
-            "Node.js",
             "Express.js",
+            "Node.js",
             "Django",
-            "TailwindCSS",
-            "Bootstrap"
+            "Streamlit"
+        ],
+        "libraries": [
+            "D3.js",
+            "OpenCV",
+            "PyQt5",
+            "NumPy",
+            "Pandas",
+            "Ultralytics"
         ],
         "tools": [
-            "Git",
-            "Docker",
-            "AWS",
-            "Firebase",
-            "MongoDB",
-            "PostgreSQL",
-            "Figma"
+            "AWS EC2",
+            "Netlify",
+            "ROS",
+            "Gazebo"
         ],
         "other": [
-            "REST API Design",
-            "GraphQL",
-            "CI/CD",
-            "Agile/Scrum",
-            "Unit Testing",
-            "UI/UX Design",
-            "Data Structures & Algorithms"
+            "DOM Manipulation",
+            "Video SDK Integration",
+            "Arduino Circuit Design",
+            "Edge Detection",
+            "Machine Learning",
+            "Full Stack Development"
         ]
     },
     "coursework": [
         {
-            "title": "Data Structures and Algorithms",
-            "description": "Comprehensive study of data structures, algorithm design and analysis"
+            "title": "Probability and Statistics",
+            "description": "Statistical analysis and probability theory"
         },
         {
-            "title": "Database Management Systems",
-            "description": "Relational database design, SQL, transaction processing, and query optimization"
+            "title": "Advanced Calculus",
+            "description": "Advanced mathematical concepts and calculus applications"
         },
         {
-            "title": "Web Development",
-            "description": "Full-stack web application development using modern frameworks and tools"
+            "title": "Linear Algebra, Numerical and Complex Analysis",
+            "description": "Mathematical foundations for computational applications"
         },
         {
-            "title": "Machine Learning",
-            "description": "Fundamentals of ML algorithms, data preprocessing, and model evaluation"
+            "title": "Transform Calculus",
+            "description": "Mathematical transformations and applications"
         },
         {
-            "title": "Computer Networks",
-            "description": "Network protocols, architecture, and distributed systems"
+            "title": "Operations Research",
+            "description": "Optimization techniques and decision-making models"
         },
         {
-            "title": "Operating Systems",
-            "description": "Process management, memory management, file systems, and security"
+            "title": "Graphical and Generative Models in Machine Learning",
+            "description": "Advanced machine learning concepts and applications"
         }
     ],
     "achievements": [
         {
-            "title": "Dean's List",
-            "period": "2022-2023",
-            "description": "Recognized for academic excellence"
+            "title": "Department Change to Industrial and Systems Engineering",
+            "period": "2023",
+            "description": "Top 10% of a batch of more than 1800 students"
         },
         {
-            "title": "Hackathon Winner",
-            "period": "2023",
-            "description": "First place in college-wide coding competition"
-        }
-    ],
-    "competitions": [
-        {
-            "title": "ACM ICPC Regionals",
+            "title": "Joint Entrance Examination Advanced",
             "period": "2022",
-            "description": "Participated in the prestigious algorithmic programming contest",
-            "details": [
-                "Top 15% finish",
-                "Solved 6 out of 8 problems"
-            ]
+            "description": "Secured a rank among the top 4.08% students of more than 0.15 million candidates"
+        },
+        {
+            "title": "Joint Entrance Examination Main",
+            "period": "2022",
+            "description": "Secured a rank among the top 0.42% students of more than 1.02 million candidates"
+        },
+        {
+            "title": "National Science Week Hackathon",
+            "period": "2023",
+            "description": "2nd position for creating a Full Stack Breadth Course Recommendation Tool"
+        },
+        {
+            "title": "Inter IIT Tech Meet 13.0",
+            "period": "2024",
+            "description": "Second place for ISRO problem statement, contributing to overall gold"
+        },
+        {
+            "title": "Distinction in Grade 1 Keyboard Exam",
+            "period": "2022",
+            "description": "Overall grade of 97% conducted by Trinity College London"
         }
     ],
     "extracurricular": [
         {
-            "title": "Technology Club",
-            "period": "2021-Present",
-            "description": "Active member of campus technology community",
+            "title": "Street Play Team",
+            "period": "2024-2025",
+            "description": "SoCult 2025 General Championship",
             "details": [
-                "Organized workshops on web development",
-                "Mentored junior students"
+                "Member of the gold-winning Street Play team"
+            ]
+        },
+        {
+            "title": "Music Performance",
+            "period": "2024-2025",
+            "description": "SoCult 2025 General Championship",
+            "details": [
+                "Lead electric guitarist in the group performance"
+            ]
+        },
+        {
+            "title": "Tech 2025 General Championship",
+            "period": "2024-2025",
+            "description": "Technical competitions",
+            "details": [
+                "Designed employee selection algorithms for OpenSoft",
+                "Participated in hardware modeling"
+            ]
+        },
+        {
+            "title": "Academy of Classical and Folk Arts",
+            "period": "December 2022 - April 2024",
+            "description": "IIT Kharagpur",
+            "details": [
+                "Vocal Music Student as part of National Cultural Appreciation"
+            ]
+        },
+        {
+            "title": "Keyboard Training",
+            "period": "2020-2022",
+            "description": "Trinity College London",
+            "details": [
+                "Achieved Distinction in Grade 1 Keyboard Exam with 97%",
+                "Self-taught till Grade 3"
             ]
         }
     ]

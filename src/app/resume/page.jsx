@@ -211,7 +211,7 @@ export default function Resume() {
                 <ResumeSection title="Experience" icon={IconBriefcase} items={resumeData.experience} />
                 <ResumeSection title="Projects" icon={IconAward} items={resumeData.projects} />
                 <ResumeSection title="Achievements" icon={IconTrophy} items={resumeData.achievements} />
-                <ResumeSection title="Competitions" icon={IconAward} items={resumeData.competitions} />
+                {/* <ResumeSection title="Competitions" icon={IconAward} items={resumeData.competitions} /> */}
                 <SkillsSection title="Skills" icon={IconCode} skills={resumeData.skills} />
                 <ResumeSection title="Extra Curricular Activities" icon={IconUsers} items={resumeData.extracurricular} />
                 <CourseworkSection title="Coursework" icon={IconBook} courses={resumeData.coursework} />

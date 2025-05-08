@@ -36,7 +36,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600"
             >
-              Hi, I'm Ben
+              Hi, I&apos;m Ben
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
