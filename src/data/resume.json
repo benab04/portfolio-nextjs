@@ -1,0 +1,144 @@
+{
+    "education": [
+        {
+            "title": "Bachelor of Technology",
+            "subtitle": "Computer Science and Engineering",
+            "period": "2021 - 2025",
+            "description": "Indian Institute of Technology Kharagpur",
+            "details": [
+                "CGPA: 8.5/10",
+                "Relevant Coursework: Data Structures, Algorithms, Database Systems"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "title": "Strategy and Consulting Intern",
+            "subtitle": "Accenture",
+            "period": "Summer 2023",
+            "description": "Worked on developing and maintaining web applications",
+            "details": [
+                "Developed new features using React and Node.js",
+                "Collaborated with team members on project planning and execution"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Dynamic Elemental Mapping on Moon",
+            "period": "2023",
+            "description": "A comprehensive web application for visualizing lunar elemental data",
+            "details": [
+                "Technologies used: React, Node.js, MongoDB, GIS mapping",
+                "Implemented interactive visualization features for scientific data analysis"
+            ]
+        },
+        {
+            "title": "Breadth Selection Tool",
+            "period": "2023",
+            "description": "Tool for optimizing course selection based on academic breadth requirements",
+            "details": [
+                "Technologies used: JavaScript, Python, SQL",
+                "Automated the course selection process, reducing planning time by 70%"
+            ]
+        }
+    ],
+    "skills": {
+        "languages": [
+            "JavaScript",
+            "TypeScript",
+            "Python",
+            "Java",
+            "C/C++",
+            "SQL",
+            "HTML/CSS"
+        ],
+        "frameworks": [
+            "React.js",
+            "Next.js",
+            "Node.js",
+            "Express.js",
+            "Django",
+            "TailwindCSS",
+            "Bootstrap"
+        ],
+        "tools": [
+            "Git",
+            "Docker",
+            "AWS",
+            "Firebase",
+            "MongoDB",
+            "PostgreSQL",
+            "Figma"
+        ],
+        "other": [
+            "REST API Design",
+            "GraphQL",
+            "CI/CD",
+            "Agile/Scrum",
+            "Unit Testing",
+            "UI/UX Design",
+            "Data Structures & Algorithms"
+        ]
+    },
+    "coursework": [
+        {
+            "title": "Data Structures and Algorithms",
+            "description": "Comprehensive study of data structures, algorithm design and analysis"
+        },
+        {
+            "title": "Database Management Systems",
+            "description": "Relational database design, SQL, transaction processing, and query optimization"
+        },
+        {
+            "title": "Web Development",
+            "description": "Full-stack web application development using modern frameworks and tools"
+        },
+        {
+            "title": "Machine Learning",
+            "description": "Fundamentals of ML algorithms, data preprocessing, and model evaluation"
+        },
+        {
+            "title": "Computer Networks",
+            "description": "Network protocols, architecture, and distributed systems"
+        },
+        {
+            "title": "Operating Systems",
+            "description": "Process management, memory management, file systems, and security"
+        }
+    ],
+    "achievements": [
+        {
+            "title": "Dean's List",
+            "period": "2022-2023",
+            "description": "Recognized for academic excellence"
+        },
+        {
+            "title": "Hackathon Winner",
+            "period": "2023",
+            "description": "First place in college-wide coding competition"
+        }
+    ],
+    "competitions": [
+        {
+            "title": "ACM ICPC Regionals",
+            "period": "2022",
+            "description": "Participated in the prestigious algorithmic programming contest",
+            "details": [
+                "Top 15% finish",
+                "Solved 6 out of 8 problems"
+            ]
+        }
+    ],
+    "extracurricular": [
+        {
+            "title": "Technology Club",
+            "period": "2021-Present",
+            "description": "Active member of campus technology community",
+            "details": [
+                "Organized workshops on web development",
+                "Mentored junior students"
+            ]
+        }
+    ]
+}
