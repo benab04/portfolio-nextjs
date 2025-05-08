@@ -190,7 +190,7 @@
             },
             "details": {
                 "overview": "A comprehensive market analysis tool with automated data processing and visualization",
-                "role": "Data Analyst & Developer",
+                "role": "Full Stack Developer",
                 "duration": "December 2023 - January 2024",
                 "technologies": [
                     "ReactJS",
@@ -224,7 +224,7 @@
             "brand": null,
             "details": {
                 "overview": "Real-time drone detection and tracking system using computer vision",
-                "role": "Computer Vision Engineer",
+                "role": "Self Project",
                 "duration": "March 2024",
                 "technologies": [
                     "YOLOv8",
@@ -258,7 +258,7 @@
             "brand": null,
             "details": {
                 "overview": "A CNN-based handwritten digit recognition system with real-time prediction",
-                "role": "ML Engineer",
+                "role": "Self Project",
                 "duration": "March 2024",
                 "technologies": [
                     "Streamlit",
@@ -291,7 +291,7 @@
             "brand": null,
             "details": {
                 "overview": "An AI-powered tool that converts algorithm descriptions into executable code",
-                "role": "Full Stack Developer",
+                "role": "Self Project",
                 "duration": "March 2024",
                 "technologies": [
                     "ReactJS",
@@ -326,7 +326,7 @@
             "brand": null,
             "details": {
                 "overview": "An AI-powered Sudoku solver using computer vision and constraint programming",
-                "role": "Full Stack Developer",
+                "role": "Self Project",
                 "duration": "March 2024",
                 "technologies": [
                     "ReactJS",
@@ -395,7 +395,7 @@
             "brand": null,
             "details": {
                 "overview": "A machine learning model for cancer prediction with interactive interface",
-                "role": "ML Engineer",
+                "role": "Self Project",
                 "duration": "March 2024",
                 "technologies": [
                     "Streamlit",
@@ -427,8 +427,8 @@
             "brand": null,
             "details": {
                 "overview": "An automated solar tracking system for optimal energy collection",
-                "role": "Hardware Engineer",
-                "duration": "2023",
+                "role": "DIY Lab Project",
+                "duration": "November 2022 - December 2022",
                 "technologies": [
                     "Arduino",
                     "LDR Sensors",
