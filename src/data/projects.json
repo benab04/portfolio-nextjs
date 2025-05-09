@@ -338,7 +338,6 @@
                 "highlights": [
                     "97% accuracy on UNSW-NB15 dataset",
                     "Real-time blocking of attacks",
-                    "Customizable blocking duration",
                     "Feature selection done through Factorial Design of Experiments and SHAP values"
                 ]
             },
