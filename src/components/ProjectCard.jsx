@@ -67,7 +67,7 @@ const ProjectCard = ({ project }) => {
                     {isHovered && project.details && (
                         <motion.div
                             initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
+                            animate={{ opacity: 0.95 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.3 }}
                             className="absolute inset-0 bg-black/90 backdrop-blur-sm overflow-y-auto"
