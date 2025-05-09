@@ -381,7 +381,7 @@
         {
             "title": "Dynamic Elemental Mapping on Moon",
             "description": "Interactive 3D moon model using Three.js, showcasing element maps and important sites, with toggleable satellite and main camera views.",
-            "image": "/images/dynamicmappingofmoon.png",
+            "image": "/images/dynamicmappingofmoon_mapped.png",
             "keywords": [
                 "ThreeJS",
                 "ReactJS",
