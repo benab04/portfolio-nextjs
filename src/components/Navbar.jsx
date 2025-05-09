@@ -116,9 +116,10 @@ const Navbar = () => {
                                     <div className="relative w-6 h-5">
                                         <motion.span
                                             className="absolute h-0.5 w-6 bg-current"
+                                            style={{ top: "0px" }}
                                             animate={{
                                                 rotate: mobileMenuOpen ? 45 : 0,
-                                                y: mobileMenuOpen ? 10 : 0,
+                                                y: mobileMenuOpen ? 8 : 0,
                                             }}
                                             transition={{ duration: 0.3 }}
                                         />
@@ -132,9 +133,10 @@ const Navbar = () => {
                                         />
                                         <motion.span
                                             className="absolute h-0.5 w-6 bg-current"
+                                            style={{ top: "16px" }}
                                             animate={{
                                                 rotate: mobileMenuOpen ? -45 : 0,
-                                                y: mobileMenuOpen ? -10 : 20,
+                                                y: mobileMenuOpen ? -8 : 0,
                                             }}
                                             transition={{ duration: 0.3 }}
                                         />
@@ -188,7 +190,7 @@ const Navbar = () => {
                                             initial={{ opacity: 0, x: 50 }}
                                             animate={{ opacity: 1, x: 0 }}
                                             transition={{ duration: 0.3, delay: index * 0.1 }}
-                                            className="border-b border-gray-800/50 pb-4"
+                                            className="border-b border-gray-800/30 pb-4 last:border-b-0"
                                         >
                                             <Link
                                                 href={item.href}
