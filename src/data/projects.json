@@ -100,6 +100,40 @@
             "show": true
         },
         {
+            "title": "Handwritten Digit Recognition",
+            "description": "Developed and trained a CNN model achieving over 98% accuracy on MNIST for handwritten digit recognition. Deployed the model via Streamlit, enabling users to draw digits for real-time predictions.",
+            "image": "/images/digit.png",
+            "keywords": [
+                "Streamlit",
+                "Neural Networks",
+                "CNN",
+                "Python"
+            ],
+            "type": "Deep Learning",
+            "brand": null,
+            "details": {
+                "overview": "A CNN-based handwritten digit recognition system with real-time prediction",
+                "role": "Self Project",
+                "duration": "March 2024",
+                "technologies": [
+                    "Streamlit",
+                    "CNN",
+                    "Python"
+                ],
+                "highlights": [
+                    "98% accuracy on MNIST dataset",
+                    "Real-time digit prediction",
+                    "Interactive drawing interface",
+                    "Streamlit deployment"
+                ]
+            },
+            "links": {
+                "deployed": "https://digit-recognition-benab04.streamlit.app/",
+                "source": "https://github.com/benab04/digit-recognition-streamlit"
+            },
+            "show": true
+        },
+        {
             "title": "Sudoku Solver",
             "description": "Implemented a pipeline combining perspective transform and CNN for Sudoku grid digit extraction, followed by Constraint Programming with CPLEX in Python for solving Sudoku puzzles.",
             "image": "/images/Sudoku.png",
@@ -170,40 +204,6 @@
             "show": true
         },
         {
-            "title": "Handwritten Digit Recognition",
-            "description": "Developed and trained a CNN model achieving over 98% accuracy on MNIST for handwritten digit recognition. Deployed the model via Streamlit, enabling users to draw digits for real-time predictions.",
-            "image": "/images/digit.png",
-            "keywords": [
-                "Streamlit",
-                "Neural Networks",
-                "CNN",
-                "Python"
-            ],
-            "type": "Machine Learning",
-            "brand": null,
-            "details": {
-                "overview": "A CNN-based handwritten digit recognition system with real-time prediction",
-                "role": "Self Project",
-                "duration": "March 2024",
-                "technologies": [
-                    "Streamlit",
-                    "CNN",
-                    "Python"
-                ],
-                "highlights": [
-                    "98% accuracy on MNIST dataset",
-                    "Real-time digit prediction",
-                    "Interactive drawing interface",
-                    "Streamlit deployment"
-                ]
-            },
-            "links": {
-                "deployed": "https://digit-recognition-benab04.streamlit.app/",
-                "source": "https://github.com/benab04/digit-recognition-streamlit"
-            },
-            "show": true
-        },
-        {
             "title": "Drone Localization",
             "description": "The project utilizes YOLOv8 for real-time drone detection in images and videos, featuring evaluation metrics like precision-recall curves and a real-time tracking system, alongside visualization tools for result analysis.",
             "image": "/images/localization.png",
@@ -247,7 +247,7 @@
                 "Python",
                 "Web Scraping"
             ],
-            "type": "Freelance Project",
+            "type": "Freelance",
             "brand": {
                 "name": "Marico Pvt. Limited",
                 "logo": "/images/marico_logo.png"
@@ -309,6 +309,73 @@
             "links": {
                 "deployed": "https://breadth-selection.netlify.app/",
                 "source": "https://github.com/benab04/Breadth-Selection-Frontend"
+            },
+            "show": true
+        },
+        {
+            "title": "Django-Attack-Blocker",
+            "description": "The django-attack-blocker package is a Django library designed for blocking attacks on Django applications, trained on the UNSW-NB15 dataset.",
+            "image": "/images/django-attack-blocker.png",
+            "keywords": [
+                "Django",
+                "Python",
+                "Machine Learning",
+                "PyPI"
+            ],
+            "type": "Open Source",
+            "brand": null,
+            "details": {
+                "overview": "The django-attack-blocker package has decorator functions which can be used with different Django views to block attacks. It allows both temporary and permanent blocking of IP addresses.",
+                "role": "Contributor",
+                "duration": "April 2025",
+                "technologies": [
+                    "Django",
+                    "Python",
+                    "Machine Learning",
+                    "Django Rest Framework",
+                    "UNSW Dataset"
+                ],
+                "highlights": [
+                    "97% accuracy on UNSW-NB15 dataset",
+                    "Real-time blocking of attacks",
+                    "Customizable blocking duration",
+                    "Feature selection done through Factorial Design of Experiments and SHAP values"
+                ]
+            },
+            "links": {
+                "deployed": "https://pypi.org/project/django-attack-blocker/",
+                "source": "https://github.com/benab04/django-attack-blocker"
+            },
+            "show": true
+        },
+        {
+            "title": "Astro3D",
+            "description": "The astro3d package is a specialized Three.js library designed for 3D visualization of astronomical objects, enabling developers to easily generate realistic, textured 3D spheres representing planets, moons, and satellites.",
+            "image": "/images/astro3d.png",
+            "keywords": [
+                "ThreeJS",
+                "NPM"
+            ],
+            "type": "Open Source",
+            "brand": null,
+            "details": {
+                "overview": "The astro3d package is a Three.js-based library for easily creating realistic, customizable 3D planets, moons, and satellites with textures and orbital simulations.",
+                "role": "Owner & Contributor",
+                "duration": "May 2025",
+                "technologies": [
+                    "Three.js",
+                    "NPM"
+                ],
+                "highlights": [
+                    "Realistic 3D planet and satellite models with customizable textures",
+                    "Interactive orbital simulation and visualization",
+                    "Supports multiple celestial bodies and orbital paths",
+                    "Minimal setup-reduces boilerplate code for planetary visualizations"
+                ]
+            },
+            "links": {
+                "deployed": "https://www.npmjs.com/package/astro3d",
+                "source": "https://github.com/benab04/astro3d"
             },
             "show": true
         },

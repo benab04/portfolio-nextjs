@@ -24,4 +24,38 @@ export async function GET(request) {
         console.error('Error fetching projects:', error);
         return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
     }
+}
+
+export async function PUT(request) {
+    try {
+        await connectDB();
+
+        const { projects, secretKey } = await request.json();
+
+        // Verify secret key
+        if (secretKey !== process.env.DASHBOARD_SECRET_KEY) {
+            return NextResponse.json(
+                { error: 'Unauthorized. Invalid secret key.' },
+                { status: 401 }
+            );
+        }
+
+        if (!projects || !Array.isArray(projects)) {
+            return NextResponse.json(
+                { error: 'Invalid request body. Expected an array of projects.' },
+                { status: 400 }
+            );
+        }
+
+        // Delete all existing projects
+        await Project.deleteMany({});
+
+        // Insert new projects
+        await Project.insertMany(projects);
+
+        return NextResponse.json({ success: true, message: 'Projects updated successfully' });
+    } catch (error) {
+        console.error('Error updating projects:', error);
+        return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    }
 } 

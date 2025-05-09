@@ -17,4 +17,44 @@ export async function GET() {
         console.error('Error fetching resume:', error);
         return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
     }
+}
+
+export async function PUT(request) {
+    try {
+        await connectDB();
+
+        const { secretKey, ...resumeData } = await request.json();
+
+        // Verify secret key
+        if (secretKey !== process.env.DASHBOARD_SECRET_KEY) {
+            return NextResponse.json(
+                { error: 'Unauthorized. Invalid secret key.' },
+                { status: 401 }
+            );
+        }
+
+        if (!resumeData) {
+            return NextResponse.json(
+                { error: 'Invalid request body.' },
+                { status: 400 }
+            );
+        }
+
+        // Find the most recent resume
+        const existingResume = await Resume.findOne().sort({ createdAt: -1 });
+
+        if (existingResume) {
+            // Update existing resume
+            Object.assign(existingResume, resumeData);
+            await existingResume.save();
+        } else {
+            // Create new resume if none exists
+            await Resume.create(resumeData);
+        }
+
+        return NextResponse.json({ success: true, message: 'Resume updated successfully' });
+    } catch (error) {
+        console.error('Error updating resume:', error);
+        return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    }
 } 

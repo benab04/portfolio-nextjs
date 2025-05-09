@@ -3,10 +3,13 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { IconMenu2, IconX } from "@tabler/icons-react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const pathname = usePathname();
+    const isHomePage = pathname === "/";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -45,14 +48,18 @@ const Navbar = () => {
         { name: "Projects", href: "/#projects" },
         { name: "Resume", href: "/resume" },
         { name: "Contact", href: "/#contact" },
-        { name: "Blog", href: "https://medium.com/@benabrahambiju" },
+        { name: "Blog", href: "https://medium.com/@benabrahambiju", target: "_blank", rel: "noopener noreferrer" },
+        // { name: "Dashboard", href: "/dashboard" },
     ];
+
+    // Show background if scrolled OR not on home page
+    const showBackground = scrolled || !isHomePage;
 
     return (
         <motion.nav
             initial={{ y: -100 }}
             animate={{ y: 0 }}
-            className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-black/80 backdrop-blur-md" : "bg-transparent"
+            className={`fixed w-full z-50 transition-all duration-300 ${showBackground ? "bg-black/80 backdrop-blur-md" : "bg-transparent"
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,6 +76,8 @@ const Navbar = () => {
                                     key={item.name}
                                     href={item.href}
                                     className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                                    target={item.target}
+                                    rel={item.rel}
                                 >
                                     {item.name}
                                 </Link>
@@ -127,6 +136,8 @@ const Navbar = () => {
                                         href={item.href}
                                         className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition-colors"
                                         onClick={() => setIsOpen(false)}
+                                        target={item.target}
+                                        rel={item.rel}
                                     >
                                         {item.name}
                                     </Link>
