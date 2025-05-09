@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { IconSchool, IconBriefcase, IconTrophy, IconAward, IconUsers, IconCode, IconDeviceDesktop, IconTools, IconStar, IconBook } from "@tabler/icons-react";
-import resumeData from "@/data/resume.json";
+import { fetchResume } from "@/lib/api";
 
 const ResumeSection = ({ title, icon: Icon, items }) => {
     const [mounted, setMounted] = useState(false);
@@ -10,6 +10,10 @@ const ResumeSection = ({ title, icon: Icon, items }) => {
     useEffect(() => {
         setMounted(true);
     }, []);
+
+    if (!items || items.length === 0) {
+        return null;
+    }
 
     return (
         <motion.section
@@ -60,6 +64,21 @@ const SkillsSection = ({ title, icon: Icon, skills }) => {
         setMounted(true);
     }, []);
 
+    if (!skills) {
+        return null;
+    }
+
+    // Check if skills is an object with categories or an array of category objects
+    const isObjectFormat = !Array.isArray(skills);
+
+    // If it's in object format, convert it to array format for rendering
+    const skillCategories = isObjectFormat
+        ? Object.entries(skills).map(([category, items]) => ({
+            category: category.charAt(0).toUpperCase() + category.slice(1),
+            items
+        }))
+        : skills;
+
     return (
         <motion.section
             initial={{ opacity: 0, y: 20 }}
@@ -72,81 +91,27 @@ const SkillsSection = ({ title, icon: Icon, skills }) => {
                 <h2 className="text-2xl font-bold">{title}</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={mounted ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.1 }}
-                    className="bg-white/5 rounded-lg p-6"
-                >
-                    <div className="flex items-center gap-2 mb-4">
-                        <IconCode size={20} className="text-purple-400" />
-                        <h3 className="text-lg font-semibold">Languages</h3>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                        {skills.languages.map((skill, index) => (
-                            <span key={index} className="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300">
-                                {skill}
-                            </span>
-                        ))}
-                    </div>
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={mounted ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    className="bg-white/5 rounded-lg p-6"
-                >
-                    <div className="flex items-center gap-2 mb-4">
-                        <IconDeviceDesktop size={20} className="text-purple-400" />
-                        <h3 className="text-lg font-semibold">Frameworks</h3>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                        {skills.frameworks.map((skill, index) => (
-                            <span key={index} className="px-3 py-1 rounded-full text-sm bg-blue-500/20 text-blue-300">
-                                {skill}
-                            </span>
-                        ))}
-                    </div>
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={mounted ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.3 }}
-                    className="bg-white/5 rounded-lg p-6"
-                >
-                    <div className="flex items-center gap-2 mb-4">
-                        <IconTools size={20} className="text-purple-400" />
-                        <h3 className="text-lg font-semibold">Tools</h3>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                        {skills.tools.map((skill, index) => (
-                            <span key={index} className="px-3 py-1 rounded-full text-sm bg-pink-500/20 text-pink-300">
-                                {skill}
-                            </span>
-                        ))}
-                    </div>
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={mounted ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.4 }}
-                    className="bg-white/5 rounded-lg p-6"
-                >
-                    <div className="flex items-center gap-2 mb-4">
-                        <IconStar size={20} className="text-purple-400" />
-                        <h3 className="text-lg font-semibold">Other</h3>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                        {skills.other.map((skill, index) => (
-                            <span key={index} className="px-3 py-1 rounded-full text-sm bg-green-500/20 text-green-300">
-                                {skill}
-                            </span>
-                        ))}
-                    </div>
-                </motion.div>
+                {skillCategories.map((skillCategory, index) => (
+                    <motion.div
+                        key={index}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={mounted ? { opacity: 1, x: 0 } : {}}
+                        transition={{ duration: 0.5, delay: 0.1 * index }}
+                        className="bg-white/5 rounded-lg p-6"
+                    >
+                        <div className="flex items-center gap-2 mb-4">
+                            <IconStar size={20} className="text-purple-400" />
+                            <h3 className="text-lg font-semibold">{skillCategory.category}</h3>
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                            {skillCategory.items.map((skill, idx) => (
+                                <span key={idx} className="px-3 py-1 rounded-full text-sm bg-purple-500/20 text-purple-300">
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+                    </motion.div>
+                ))}
             </div>
         </motion.section>
     );
@@ -158,6 +123,10 @@ const CourseworkSection = ({ title, icon: Icon, courses }) => {
     useEffect(() => {
         setMounted(true);
     }, []);
+
+    if (!courses || courses.length === 0) {
+        return null;
+    }
 
     return (
         <motion.section
@@ -179,7 +148,7 @@ const CourseworkSection = ({ title, icon: Icon, courses }) => {
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                         className="bg-white/5 rounded-lg p-6"
                     >
-                        <h3 className="text-lg font-semibold mb-2">{course.title}</h3>
+                        <h3 className="text-lg font-semibold mb-2">{course.title || course.name}</h3>
                         <p className="text-gray-400">{course.description}</p>
                     </motion.div>
                 ))}
@@ -190,10 +159,35 @@ const CourseworkSection = ({ title, icon: Icon, courses }) => {
 
 export default function Resume() {
     const [mounted, setMounted] = useState(false);
+    const [resumeData, setResumeData] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         setMounted(true);
+
+        // Fetch resume data from the API
+        const loadResume = async () => {
+            try {
+                const data = await fetchResume();
+                setResumeData(data.resume);
+                console.log("Fetched resume data:", data.resume);
+            } catch (error) {
+                console.error('Error loading resume:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        loadResume();
     }, []);
+
+    if (loading || !resumeData) {
+        return (
+            <div className="min-h-screen bg-black text-white flex items-center justify-center">
+                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-purple-500"></div>
+            </div>
+        );
+    }
 
     return (
         <main className="min-h-screen bg-black text-white py-20 px-4">
@@ -209,9 +203,8 @@ export default function Resume() {
 
                 <ResumeSection title="Education" icon={IconSchool} items={resumeData.education} />
                 <ResumeSection title="Experience" icon={IconBriefcase} items={resumeData.experience} />
-                <ResumeSection title="Projects" icon={IconAward} items={resumeData.projects} />
+                {resumeData.projects && <ResumeSection title="Projects" icon={IconAward} items={resumeData.projects} />}
                 <ResumeSection title="Achievements" icon={IconTrophy} items={resumeData.achievements} />
-                {/* <ResumeSection title="Competitions" icon={IconAward} items={resumeData.competitions} /> */}
                 <SkillsSection title="Skills" icon={IconCode} skills={resumeData.skills} />
                 <ResumeSection title="Extra Curricular Activities" icon={IconUsers} items={resumeData.extracurricular} />
                 <CourseworkSection title="Coursework" icon={IconBook} courses={resumeData.coursework} />

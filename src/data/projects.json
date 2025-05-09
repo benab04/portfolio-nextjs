@@ -1,18 +1,388 @@
 {
     "projects": [
         {
-            "title": "Strategy and Consulting Internship",
-            "description": "Incoming Summer Intern at Accenture",
-            "image": "/images/accenture_project.webp",
+            "title": "Dual Axis Solar Tracker",
+            "description": "The dual-axis solar tracker project optimizes solar energy intake by accurately following the Sun's movement using 4 LDRs and an Arduino Uno, offering real-time tracking with the option to incorporate time delays for enhanced energy efficiency.",
+            "image": "/images/solar.png",
             "keywords": [
-                "S&C"
+                "Arduino C",
+                "DIY"
             ],
-            "type": "Incoming",
-            "brand": {
-                "name": "Accenture",
-                "logo": "/images/accenture.svg.png"
+            "type": "Hardware Project",
+            "brand": null,
+            "details": {
+                "overview": "An automated solar tracking system for optimal energy collection",
+                "role": "DIY Lab Project",
+                "duration": "November 2022 - December 2022",
+                "technologies": [
+                    "Arduino",
+                    "LDR Sensors",
+                    "C Programming"
+                ],
+                "highlights": [
+                    "Dual-axis tracking",
+                    "Real-time sun following",
+                    "Energy efficiency optimization",
+                    "Automated control system"
+                ]
             },
-            "details": null,
+            "links": {
+                "deployed": "https://drive.google.com/file/d/11Dm_58JEql_6SJAI_dEFuUuqarM5Sum8/view",
+                "source": ""
+            },
+            "show": false
+        },
+        {
+            "title": "Cancer Prediction Model",
+            "description": "Created a classification model distinguishing benign and malicious samples, integrated with Streamlit for dynamic parameter adjustment and real-time result retrieval.",
+            "image": "/images/cancer.png",
+            "keywords": [
+                "Streamlit",
+                "Logistic Regression",
+                "Python"
+            ],
+            "type": "Machine Learning",
+            "brand": null,
+            "details": {
+                "overview": "A machine learning model for cancer prediction with interactive interface",
+                "role": "Self Project",
+                "duration": "March 2024",
+                "technologies": [
+                    "Streamlit",
+                    "Logistic Regression",
+                    "Python"
+                ],
+                "highlights": [
+                    "Binary classification model",
+                    "Real-time predictions",
+                    "Parameter adjustment interface",
+                    "Streamlit deployment"
+                ]
+            },
+            "links": {
+                "deployed": "https://cancer-predict-benab04.streamlit.app/",
+                "source": "https://github.com/benab04/cancer-predict-streamlit"
+            },
+            "show": true
+        },
+        {
+            "title": "SBRC Website",
+            "description": "Collaboratively crafted the official website with ReactJS, Framer Motion, and Bootstrap in a four-member team, complemented by Figma wireframes for an engaging UI/UX design.",
+            "image": "/images/sbrc.png",
+            "keywords": [
+                "ReactJS",
+                "Bootstrap",
+                "Framer Motion",
+                "Python"
+            ],
+            "type": "Web Application",
+            "brand": null,
+            "details": {
+                "overview": "Official website development with modern UI/UX design",
+                "role": "Frontend Developer",
+                "duration": "January 2024 - May 2024",
+                "technologies": [
+                    "ReactJS",
+                    "Bootstrap",
+                    "Framer Motion"
+                ],
+                "highlights": [
+                    "Responsive design",
+                    "Interactive animations",
+                    "Figma wireframes",
+                    "Team collaboration"
+                ]
+            },
+            "links": {
+                "deployed": "https://sbrc.netlify.app/",
+                "source": "https://github.com/benab04/SBRC-website"
+            },
+            "show": true
+        },
+        {
+            "title": "Sudoku Solver",
+            "description": "Implemented a pipeline combining perspective transform and CNN for Sudoku grid digit extraction, followed by Constraint Programming with CPLEX in Python for solving Sudoku puzzles.",
+            "image": "/images/Sudoku.png",
+            "keywords": [
+                "ReactJS",
+                "Django",
+                "CNN",
+                "OpenCV",
+                "CPLEX"
+            ],
+            "type": "Deep Learning",
+            "brand": null,
+            "details": {
+                "overview": "An AI-powered Sudoku solver using computer vision and constraint programming",
+                "role": "Self Project",
+                "duration": "March 2024",
+                "technologies": [
+                    "ReactJS",
+                    "Django",
+                    "CNN",
+                    "OpenCV",
+                    "CPLEX"
+                ],
+                "highlights": [
+                    "CNN-based digit recognition",
+                    "Perspective transform for grid detection",
+                    "Constraint programming for solving",
+                    "Real-time solution generation"
+                ]
+            },
+            "links": {
+                "deployed": "https://sudoku-solver-benab04.netlify.app/",
+                "source": "https://github.com/benab04/Sudoku-Solver-Frontend"
+            },
+            "show": true
+        },
+        {
+            "title": "Algorithm to Code Converter",
+            "description": "Based on a prompt or sequence of algorithms given by a user, the corresponding code in a variety of languages will be generated.",
+            "image": "/images/Algorithm.png",
+            "keywords": [
+                "ReactJS",
+                "Django",
+                "RestAPI"
+            ],
+            "type": "Web Application",
+            "brand": null,
+            "details": {
+                "overview": "An AI-powered tool that converts algorithm descriptions into executable code",
+                "role": "Self Project",
+                "duration": "March 2024",
+                "technologies": [
+                    "ReactJS",
+                    "Django",
+                    "REST API"
+                ],
+                "highlights": [
+                    "Multi-language code generation",
+                    "Natural language processing",
+                    "Real-time code conversion",
+                    "Interactive user interface"
+                ]
+            },
+            "links": {
+                "deployed": "https://algorithm-code.netlify.app/",
+                "source": "https://github.com/benab04/Algorithm-Code-Generator-Frontend"
+            },
+            "show": true
+        },
+        {
+            "title": "Handwritten Digit Recognition",
+            "description": "Developed and trained a CNN model achieving over 98% accuracy on MNIST for handwritten digit recognition. Deployed the model via Streamlit, enabling users to draw digits for real-time predictions.",
+            "image": "/images/digit.png",
+            "keywords": [
+                "Streamlit",
+                "Neural Networks",
+                "CNN",
+                "Python"
+            ],
+            "type": "Machine Learning",
+            "brand": null,
+            "details": {
+                "overview": "A CNN-based handwritten digit recognition system with real-time prediction",
+                "role": "Self Project",
+                "duration": "March 2024",
+                "technologies": [
+                    "Streamlit",
+                    "CNN",
+                    "Python"
+                ],
+                "highlights": [
+                    "98% accuracy on MNIST dataset",
+                    "Real-time digit prediction",
+                    "Interactive drawing interface",
+                    "Streamlit deployment"
+                ]
+            },
+            "links": {
+                "deployed": "https://digit-recognition-benab04.streamlit.app/",
+                "source": "https://github.com/benab04/digit-recognition-streamlit"
+            },
+            "show": true
+        },
+        {
+            "title": "Drone Localization",
+            "description": "The project utilizes YOLOv8 for real-time drone detection in images and videos, featuring evaluation metrics like precision-recall curves and a real-time tracking system, alongside visualization tools for result analysis.",
+            "image": "/images/localization.png",
+            "keywords": [
+                "YOLOv8",
+                "OpenCV",
+                "Python"
+            ],
+            "type": "Computer Vision",
+            "brand": null,
+            "details": {
+                "overview": "Real-time drone detection and tracking system using computer vision",
+                "role": "Self Project",
+                "duration": "March 2024",
+                "technologies": [
+                    "YOLOv8",
+                    "OpenCV",
+                    "Python"
+                ],
+                "highlights": [
+                    "Real-time drone detection",
+                    "Precision-recall evaluation",
+                    "Tracking system implementation",
+                    "Result visualization tools"
+                ]
+            },
+            "links": {
+                "deployed": "https://colab.research.google.com/drive/1QKrzUchqZYSHeToXNfTdFUv3wskLRMjs?usp=sharing",
+                "source": "https://github.com/benab04/Drone-Localization"
+            },
+            "show": true
+        },
+        {
+            "title": "Marico Market Analysis",
+            "description": "Leveraged Python pipelines for comprehensive data analyses, automated data tagging with Labelbox and SuperAnnotate for precision, and developed a ReactJS and Firebase frontend with D3JS for dynamic data visualization.",
+            "image": "/images/marico.png",
+            "keywords": [
+                "ReactJS",
+                "D3JS",
+                "Firebase",
+                "Python",
+                "Web Scraping"
+            ],
+            "type": "Freelance Project",
+            "brand": {
+                "name": "Marico Pvt. Limited",
+                "logo": "/images/marico_logo.png"
+            },
+            "details": {
+                "overview": "A comprehensive market analysis tool with automated data processing and visualization",
+                "role": "Full Stack Developer",
+                "duration": "December 2023 - January 2024",
+                "technologies": [
+                    "ReactJS",
+                    "D3.js",
+                    "Firebase",
+                    "Python"
+                ],
+                "highlights": [
+                    "Automated data tagging",
+                    "Interactive data visualization",
+                    "Real-time market analysis",
+                    "Custom data processing pipelines"
+                ]
+            },
+            "links": {
+                "deployed": "https://drive.google.com/file/d/1fQC2tuFctDg9fmcKDokZjuFKAjMJDvdj/view",
+                "source": ""
+            },
+            "show": true
+        },
+        {
+            "title": "Breadth Selection Tool",
+            "description": "Created a Full Stack app merging ReactJS, Firebase, and Django to recommend optimal breadth courses, employing collaborative filtering and search algorithms, and offering interactive UI for weighted preferences.",
+            "image": "/images/Breadth.png",
+            "keywords": [
+                "ReactJS",
+                "Django",
+                "RestAPI",
+                "Firebase",
+                "D3JS",
+                "Collaborative Filtering"
+            ],
+            "type": "National Science Week Hackathon",
+            "brand": null,
+            "details": {
+                "overview": "A full-stack application for recommending optimal breadth courses using collaborative filtering",
+                "role": "Full Stack Developer",
+                "duration": "March 2024",
+                "technologies": [
+                    "ReactJS",
+                    "Django",
+                    "Firebase",
+                    "D3.js"
+                ],
+                "highlights": [
+                    "Collaborative filtering algorithm",
+                    "Interactive UI for preferences",
+                    "Real-time course recommendations",
+                    "Data visualization with D3.js"
+                ]
+            },
+            "links": {
+                "deployed": "https://breadth-selection.netlify.app/",
+                "source": "https://github.com/benab04/Breadth-Selection-Frontend"
+            },
+            "show": true
+        },
+        {
+            "title": "Dynamic Elemental Mapping on Moon",
+            "description": "Interactive 3D moon model using Three.js, showcasing element maps and important sites, with toggleable satellite and main camera views.",
+            "image": "/images/dynamicmappingofmoon.png",
+            "keywords": [
+                "ThreeJS",
+                "ReactJS",
+                "Django",
+                "D3JS"
+            ],
+            "type": "Inter IIT Tech Meet 13.0",
+            "brand": {
+                "name": "Inter IIT Tech Meet 13.0",
+                "logo": "/images/interiittech13.jpeg"
+            },
+            "details": {
+                "overview": "An interactive 3D visualization of the moon's surface with elemental mapping capabilities",
+                "role": "Lead Developer",
+                "duration": "October 2024 - December 2024",
+                "technologies": [
+                    "Three.js",
+                    "React",
+                    "Django",
+                    "D3.js"
+                ],
+                "highlights": [
+                    "3D moon model with interactive controls",
+                    "Elemental mapping visualization",
+                    "Multiple camera perspectives",
+                    "Real-time data updates"
+                ]
+            },
+            "links": {
+                "deployed": "https://isro-interiit-frontend.netlify.app/",
+                "source": ""
+            },
+            "show": true
+        },
+        {
+            "title": "Interfacial Tension Measurement GUI",
+            "description": "Developed a GUI-based system for calculating interfacial tension of pendant droplets",
+            "image": "/images/sric_gui.webp",
+            "keywords": [
+                "Python",
+                "PyQt5",
+                "OpenCV",
+                "Arduino"
+            ],
+            "type": "Research Project",
+            "brand": {
+                "name": "IIT Kharagpur",
+                "logo": "/images/iitkgp.png"
+            },
+            "details": {
+                "overview": "A comprehensive system for measuring interfacial tension using computer vision",
+                "role": "Research Intern",
+                "duration": "April 2024 - May 2024",
+                "technologies": [
+                    "Python",
+                    "PyQt5",
+                    "OpenCV",
+                    "Arduino",
+                    "Canny Edge Detection"
+                ],
+                "highlights": [
+                    "Redesigned Arduino circuit for industrial pressure sensor with moving average algorithm",
+                    "Developed PyQt5 GUI for real-time droplet analysis",
+                    "Implemented Canny edge detection for shape factor determination",
+                    "Created interactive UI controls for enhanced data accuracy"
+                ]
+            },
             "links": {
                 "deployed": null,
                 "source": null
@@ -59,393 +429,23 @@
             "show": true
         },
         {
-            "title": "Interfacial Tension Measurement GUI",
-            "description": "Developed a GUI-based system for calculating interfacial tension of pendant droplets",
-            "image": "/images/sric_gui.webp",
+            "title": "Strategy and Consulting Internship",
+            "description": "Incoming Summer Intern at Accenture",
+            "image": "/images/accenture_project.webp",
             "keywords": [
-                "Python",
-                "PyQt5",
-                "OpenCV",
-                "Arduino"
+                "S&C"
             ],
-            "type": "Research Project",
+            "type": "Incoming",
             "brand": {
-                "name": "IIT Kharagpur",
-                "logo": "/images/iitkgp.png"
+                "name": "Accenture",
+                "logo": "/images/accenture.png"
             },
-            "details": {
-                "overview": "A comprehensive system for measuring interfacial tension using computer vision",
-                "role": "Research Intern",
-                "duration": "April 2024 - May 2024",
-                "technologies": [
-                    "Python",
-                    "PyQt5",
-                    "OpenCV",
-                    "Arduino",
-                    "Canny Edge Detection"
-                ],
-                "highlights": [
-                    "Redesigned Arduino circuit for industrial pressure sensor with moving average algorithm",
-                    "Developed PyQt5 GUI for real-time droplet analysis",
-                    "Implemented Canny edge detection for shape factor determination",
-                    "Created interactive UI controls for enhanced data accuracy"
-                ]
-            },
+            "details": null,
             "links": {
                 "deployed": null,
                 "source": null
             },
             "show": true
-        },
-        {
-            "title": "Dynamic Elemental Mapping on Moon",
-            "description": "Interactive 3D moon model using Three.js, showcasing element maps and important sites, with toggleable satellite and main camera views.",
-            "image": "/images/dynamicmappingofmoon.png",
-            "keywords": [
-                "ThreeJS",
-                "ReactJS",
-                "Django",
-                "D3JS"
-            ],
-            "type": "Inter IIT Tech Meet 13.0",
-            "brand": {
-                "name": "Inter IIT Tech Meet 13.0",
-                "logo": "/images/interiittech13.jpeg"
-            },
-            "details": {
-                "overview": "An interactive 3D visualization of the moon's surface with elemental mapping capabilities",
-                "role": "Lead Developer",
-                "duration": "October 2024 - December 2024",
-                "technologies": [
-                    "Three.js",
-                    "React",
-                    "Django",
-                    "D3.js"
-                ],
-                "highlights": [
-                    "3D moon model with interactive controls",
-                    "Elemental mapping visualization",
-                    "Multiple camera perspectives",
-                    "Real-time data updates"
-                ]
-            },
-            "links": {
-                "deployed": "https://isro-interiit-frontend.netlify.app/",
-                "source": ""
-            },
-            "show": true
-        },
-        {
-            "title": "Breadth Selection Tool",
-            "description": "Created a Full Stack app merging ReactJS, Firebase, and Django to recommend optimal breadth courses, employing collaborative filtering and search algorithms, and offering interactive UI for weighted preferences.",
-            "image": "/images/Breadth.png",
-            "keywords": [
-                "ReactJS",
-                "Django",
-                "RestAPI",
-                "Firebase",
-                "D3JS",
-                "Collaborative Filtering"
-            ],
-            "type": "National Science Week Hackathon",
-            "brand": null,
-            "details": {
-                "overview": "A full-stack application for recommending optimal breadth courses using collaborative filtering",
-                "role": "Full Stack Developer",
-                "duration": "March 2024",
-                "technologies": [
-                    "ReactJS",
-                    "Django",
-                    "Firebase",
-                    "D3.js"
-                ],
-                "highlights": [
-                    "Collaborative filtering algorithm",
-                    "Interactive UI for preferences",
-                    "Real-time course recommendations",
-                    "Data visualization with D3.js"
-                ]
-            },
-            "links": {
-                "deployed": "https://breadth-selection.netlify.app/",
-                "source": "https://github.com/benab04/Breadth-Selection-Frontend"
-            },
-            "show": true
-        },
-        {
-            "title": "Marico Market Analysis",
-            "description": "Leveraged Python pipelines for comprehensive data analyses, automated data tagging with Labelbox and SuperAnnotate for precision, and developed a ReactJS and Firebase frontend with D3JS for dynamic data visualization.",
-            "image": "/images/marico.png",
-            "keywords": [
-                "ReactJS",
-                "D3JS",
-                "Firebase",
-                "Python",
-                "Web Scraping"
-            ],
-            "type": "Freelance Project",
-            "brand": {
-                "name": "Marico Pvt. Limited",
-                "logo": "/images/marico_logo.png"
-            },
-            "details": {
-                "overview": "A comprehensive market analysis tool with automated data processing and visualization",
-                "role": "Full Stack Developer",
-                "duration": "December 2023 - January 2024",
-                "technologies": [
-                    "ReactJS",
-                    "D3.js",
-                    "Firebase",
-                    "Python"
-                ],
-                "highlights": [
-                    "Automated data tagging",
-                    "Interactive data visualization",
-                    "Real-time market analysis",
-                    "Custom data processing pipelines"
-                ]
-            },
-            "links": {
-                "deployed": "https://drive.google.com/file/d/1fQC2tuFctDg9fmcKDokZjuFKAjMJDvdj/view",
-                "source": ""
-            },
-            "show": true
-        },
-        {
-            "title": "Drone Localization",
-            "description": "The project utilizes YOLOv8 for real-time drone detection in images and videos, featuring evaluation metrics like precision-recall curves and a real-time tracking system, alongside visualization tools for result analysis.",
-            "image": "/images/localization.png",
-            "keywords": [
-                "YOLOv8",
-                "OpenCV",
-                "Python"
-            ],
-            "type": "Computer Vision",
-            "brand": null,
-            "details": {
-                "overview": "Real-time drone detection and tracking system using computer vision",
-                "role": "Self Project",
-                "duration": "March 2024",
-                "technologies": [
-                    "YOLOv8",
-                    "OpenCV",
-                    "Python"
-                ],
-                "highlights": [
-                    "Real-time drone detection",
-                    "Precision-recall evaluation",
-                    "Tracking system implementation",
-                    "Result visualization tools"
-                ]
-            },
-            "links": {
-                "deployed": "https://colab.research.google.com/drive/1QKrzUchqZYSHeToXNfTdFUv3wskLRMjs?usp=sharing",
-                "source": "https://github.com/benab04/Drone-Localization"
-            },
-            "show": true
-        },
-        {
-            "title": "Handwritten Digit Recognition",
-            "description": "Developed and trained a CNN model achieving over 98% accuracy on MNIST for handwritten digit recognition. Deployed the model via Streamlit, enabling users to draw digits for real-time predictions.",
-            "image": "/images/digit.png",
-            "keywords": [
-                "Streamlit",
-                "Neural Networks",
-                "CNN",
-                "Python"
-            ],
-            "type": "Machine Learning",
-            "brand": null,
-            "details": {
-                "overview": "A CNN-based handwritten digit recognition system with real-time prediction",
-                "role": "Self Project",
-                "duration": "March 2024",
-                "technologies": [
-                    "Streamlit",
-                    "CNN",
-                    "Python"
-                ],
-                "highlights": [
-                    "98% accuracy on MNIST dataset",
-                    "Real-time digit prediction",
-                    "Interactive drawing interface",
-                    "Streamlit deployment"
-                ]
-            },
-            "links": {
-                "deployed": "https://digit-recognition-benab04.streamlit.app/",
-                "source": "https://github.com/benab04/digit-recognition-streamlit"
-            },
-            "show": true
-        },
-        {
-            "title": "Algorithm to Code Converter",
-            "description": "Based on a prompt or sequence of algorithms given by a user, the corresponding code in a variety of languages will be generated.",
-            "image": "/images/Algorithm.png",
-            "keywords": [
-                "ReactJS",
-                "Django",
-                "RestAPI"
-            ],
-            "type": "Web Application",
-            "brand": null,
-            "details": {
-                "overview": "An AI-powered tool that converts algorithm descriptions into executable code",
-                "role": "Self Project",
-                "duration": "March 2024",
-                "technologies": [
-                    "ReactJS",
-                    "Django",
-                    "REST API"
-                ],
-                "highlights": [
-                    "Multi-language code generation",
-                    "Natural language processing",
-                    "Real-time code conversion",
-                    "Interactive user interface"
-                ]
-            },
-            "links": {
-                "deployed": "https://algorithm-code.netlify.app/",
-                "source": "https://github.com/benab04/Algorithm-Code-Generator-Frontend"
-            },
-            "show": true
-        },
-        {
-            "title": "Sudoku Solver",
-            "description": "Implemented a pipeline combining perspective transform and CNN for Sudoku grid digit extraction, followed by Constraint Programming with CPLEX in Python for solving Sudoku puzzles.",
-            "image": "/images/Sudoku.png",
-            "keywords": [
-                "ReactJS",
-                "Django",
-                "CNN",
-                "OpenCV",
-                "CPLEX"
-            ],
-            "type": "Deep Learning",
-            "brand": null,
-            "details": {
-                "overview": "An AI-powered Sudoku solver using computer vision and constraint programming",
-                "role": "Self Project",
-                "duration": "March 2024",
-                "technologies": [
-                    "ReactJS",
-                    "Django",
-                    "CNN",
-                    "OpenCV",
-                    "CPLEX"
-                ],
-                "highlights": [
-                    "CNN-based digit recognition",
-                    "Perspective transform for grid detection",
-                    "Constraint programming for solving",
-                    "Real-time solution generation"
-                ]
-            },
-            "links": {
-                "deployed": "https://sudoku-solver-benab04.netlify.app/",
-                "source": "https://github.com/benab04/Sudoku-Solver-Frontend"
-            },
-            "show": true
-        },
-        {
-            "title": "SBRC Website",
-            "description": "Collaboratively crafted the official website with ReactJS, Framer Motion, and Bootstrap in a four-member team, complemented by Figma wireframes for an engaging UI/UX design.",
-            "image": "/images/sbrc.png",
-            "keywords": [
-                "ReactJS",
-                "Bootstrap",
-                "Framer Motion",
-                "Python"
-            ],
-            "type": "Web Application",
-            "brand": null,
-            "details": {
-                "overview": "Official website development with modern UI/UX design",
-                "role": "Frontend Developer",
-                "duration": "January 2024 - May 2024",
-                "technologies": [
-                    "ReactJS",
-                    "Bootstrap",
-                    "Framer Motion"
-                ],
-                "highlights": [
-                    "Responsive design",
-                    "Interactive animations",
-                    "Figma wireframes",
-                    "Team collaboration"
-                ]
-            },
-            "links": {
-                "deployed": "https://sbrc.netlify.app/",
-                "source": "https://github.com/benab04/SBRC-website"
-            },
-            "show": true
-        },
-        {
-            "title": "Cancer Prediction Model",
-            "description": "Created a classification model distinguishing benign and malicious samples, integrated with Streamlit for dynamic parameter adjustment and real-time result retrieval.",
-            "image": "/images/cancer.png",
-            "keywords": [
-                "Streamlit",
-                "Logistic Regression",
-                "Python"
-            ],
-            "type": "Machine Learning",
-            "brand": null,
-            "details": {
-                "overview": "A machine learning model for cancer prediction with interactive interface",
-                "role": "Self Project",
-                "duration": "March 2024",
-                "technologies": [
-                    "Streamlit",
-                    "Logistic Regression",
-                    "Python"
-                ],
-                "highlights": [
-                    "Binary classification model",
-                    "Real-time predictions",
-                    "Parameter adjustment interface",
-                    "Streamlit deployment"
-                ]
-            },
-            "links": {
-                "deployed": "https://cancer-predict-benab04.streamlit.app/",
-                "source": "https://github.com/benab04/cancer-predict-streamlit"
-            },
-            "show": true
-        },
-        {
-            "title": "Dual Axis Solar Tracker",
-            "description": "The dual-axis solar tracker project optimizes solar energy intake by accurately following the Sun's movement using 4 LDRs and an Arduino Uno, offering real-time tracking with the option to incorporate time delays for enhanced energy efficiency.",
-            "image": "/images/solar.png",
-            "keywords": [
-                "Arduino C",
-                "DIY"
-            ],
-            "type": "Hardware Project",
-            "brand": null,
-            "details": {
-                "overview": "An automated solar tracking system for optimal energy collection",
-                "role": "DIY Lab Project",
-                "duration": "November 2022 - December 2022",
-                "technologies": [
-                    "Arduino",
-                    "LDR Sensors",
-                    "C Programming"
-                ],
-                "highlights": [
-                    "Dual-axis tracking",
-                    "Real-time sun following",
-                    "Energy efficiency optimization",
-                    "Automated control system"
-                ]
-            },
-            "links": {
-                "deployed": "https://drive.google.com/file/d/11Dm_58JEql_6SJAI_dEFuUuqarM5Sum8/view",
-                "source": ""
-            },
-            "show": false
         }
     ]
 }

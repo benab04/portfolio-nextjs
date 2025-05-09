@@ -3,20 +3,33 @@ import { motion } from "framer-motion";
 import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons-react";
 import ProjectCard from "@/components/ProjectCard";
 import ContactForm from "@/components/ContactForm";
-import projectsData from "@/data/projects.json";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { fetchProjects } from "@/lib/api";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
   const showProfileImage = process.env.NEXT_PUBLIC_SHOW_PROFILE_IMAGE === 'true';
 
   useEffect(() => {
     setMounted(true);
-  }, []);
 
-  // Filter projects to only show those with show: true
-  const visibleProjects = projectsData.projects.filter(project => project.show);
+    // Fetch projects from the API
+    const loadProjects = async () => {
+      try {
+        const data = await fetchProjects();
+        setProjects(data.projects);
+      } catch (error) {
+        console.error('Error loading projects:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadProjects();
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -158,11 +171,18 @@ export default function Home() {
           >
             Projects
           </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {visibleProjects.map((project) => (
-              <ProjectCard key={project.title} project={project} />
-            ))}
-          </div>
+
+          {loading ? (
+            <div className="flex justify-center">
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {projects.map((project) => (
+                <ProjectCard key={project._id || project.title} project={project} />
+              ))}
+            </div>
+          )}
         </motion.div>
       </section>
 

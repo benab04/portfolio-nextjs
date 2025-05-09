@@ -2,16 +2,22 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "node src/scripts/seed-database.js",
+    "reverse-json": "node src/scripts/reverse-projects.js",
+    "reverse-db": "node src/scripts/reverse-db-projects.js"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.31.0",
     "clsx": "^2.1.1",
+    "dotenv": "^16.5.0",
     "framer-motion": "^12.10.4",
+    "mongoose": "^8.1.0",
     "motion": "^12.10.4",
     "next": "15.3.2",
     "nodemailer": "^7.0.3",
