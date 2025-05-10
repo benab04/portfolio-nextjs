@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
 
@@ -9,12 +9,8 @@ const ProjectCard = ({ project }) => {
     const [imageError, setImageError] = useState(false);
 
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="group relative bg-white/5 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 hover:border-purple-500/50 transition-all duration-300"
+        <div
+            className="group relative bg-white/5 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 hover:border-purple-500/50 transition-all duration-300 h-full flex flex-col opacity-100"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -65,21 +61,15 @@ const ProjectCard = ({ project }) => {
                 {/* Overlay with Project Details */}
                 <AnimatePresence>
                     {isHovered && project.details && (
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 0.95 }}
-                            exit={{ opacity: 0 }}
-                            transition={{ duration: 0.3 }}
-                            className="absolute inset-0 bg-black/90 backdrop-blur-sm overflow-y-auto"
+                        <div
+                            className="absolute inset-0 bg-black/90 backdrop-blur-sm overflow-y-auto custom-scrollbar transition-opacity duration-300"
+                            style={{
+                                scrollbarWidth: 'thin',
+                                scrollbarColor: 'rgba(138, 75, 175, 0.5) rgba(0, 0, 0, 0.1)'
+                            }}
                         >
                             <div className="p-6 h-full flex flex-col">
-                                <motion.div
-                                    initial={{ y: 20, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    exit={{ y: 20, opacity: 0 }}
-                                    transition={{ duration: 0.3, delay: 0.1 }}
-                                    className="space-y-4 flex-grow"
-                                >
+                                <div className="space-y-4 flex-grow custom-scrollbar">
                                     {project.details.overview && (
                                         <p className="text-gray-200 text-sm">{project.details.overview}</p>
                                     )}
@@ -110,7 +100,7 @@ const ProjectCard = ({ project }) => {
                                             </ul>
                                         </div>
                                     )}
-                                </motion.div>
+                                </div>
 
                                 {/* Links - Always at bottom */}
                                 {(project.links?.deployed || project.links?.source) && (
@@ -140,32 +130,28 @@ const ProjectCard = ({ project }) => {
                                     </div>
                                 )}
                             </div>
-                        </motion.div>
+                        </div>
                     )}
                 </AnimatePresence>
             </div>
 
             {/* Content Below Image */}
-            <div className="p-6">
+            <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-purple-400 transition-colors">
                     {project.title}
                 </h3>
 
                 {/* Description with expandable height */}
-                <motion.div
-                    className="overflow-hidden"
-                    animate={{
-                        height: isHovered ? "auto" : "3rem"
-                    }}
-                    transition={{ duration: 0.3 }}
+                <div
+                    className={`overflow-hidden flex-grow transition-all duration-300 ${isHovered ? 'max-h-96' : 'max-h-12'}`}
                 >
                     <p className="text-gray-400 mb-4">
                         {project.description}
                     </p>
-                </motion.div>
+                </div>
 
                 {/* Keywords */}
-                <div className="flex flex-wrap gap-2 py-1">
+                <div className="flex flex-wrap gap-2 py-1 mt-auto">
                     {project.keywords.map((keyword) => (
                         <span
                             key={keyword}
@@ -176,7 +162,7 @@ const ProjectCard = ({ project }) => {
                     ))}
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 };
 
