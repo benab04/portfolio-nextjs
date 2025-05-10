@@ -65,7 +65,7 @@
                 "deployed": "https://cancer-predict-benab04.streamlit.app/",
                 "source": "https://github.com/benab04/cancer-predict-streamlit"
             },
-            "show": true
+            "show": false
         },
         {
             "title": "SBRC Website",
@@ -135,7 +135,7 @@
                 "deployed": "https://digit-recognition-benab04.streamlit.app/",
                 "source": "https://github.com/benab04/digit-recognition-streamlit"
             },
-            "show": true
+            "show": false
         },
         {
             "title": "Sudoku Solver",
