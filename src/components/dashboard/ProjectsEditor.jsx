@@ -48,11 +48,22 @@ export default function ProjectsEditor({ initialData }) {
             title: "",
             description: "",
             image: "",
-            tags: [],
-            source_code: "",
-            demo: "",
-            featured: false,
-            type: "web",
+            keywords: [],
+            type: "",
+            category: "Self Project",
+            brand: null,
+            details: {
+                overview: "",
+                role: "",
+                duration: "",
+                technologies: [],
+                highlights: []
+            },
+            links: {
+                deployed: "",
+                source: ""
+            },
+            show: true
         };
 
         setProjects([...projects, newProject]);
@@ -127,7 +138,12 @@ export default function ProjectsEditor({ initialData }) {
                                 <div className="flex justify-between items-start">
                                     <div>
                                         <h3 className="text-lg font-medium">{project.title || "Untitled Project"}</h3>
-                                        {project.type && <p className="text-sm text-purple-400">{project.type}</p>}
+                                        <div className="flex gap-2 mt-1">
+                                            {project.type && <p className="text-sm text-purple-400">{project.type}</p>}
+                                            {project.category && (
+                                                <p className="text-sm text-blue-400">{project.category}</p>
+                                            )}
+                                        </div>
                                         {project.description && (
                                             <p className="mt-2 text-gray-300 line-clamp-2">{project.description}</p>
                                         )}
@@ -175,6 +191,9 @@ export default function ProjectsEditor({ initialData }) {
 function ProjectEditor({ project, onSave, onCancel }) {
     const [formData, setFormData] = useState({ ...project });
     const [newTag, setNewTag] = useState("");
+
+    // Available categories
+    const categories = ["Internship", "Research", "Open Source", "Competition", "Self Project"];
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -247,6 +266,35 @@ function ProjectEditor({ project, onSave, onCancel }) {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
+                        <label className="block text-sm font-medium mb-1">Type</label>
+                        <input
+                            type="text"
+                            name="type"
+                            value={formData.type || ""}
+                            onChange={handleChange}
+                            className="w-full bg-gray-800 text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        />
+                    </div>
+
+                    <div>
+                        <label className="block text-sm font-medium mb-1">Category</label>
+                        <select
+                            name="category"
+                            value={formData.category || "Self Project"}
+                            onChange={handleChange}
+                            className="w-full bg-gray-800 text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        >
+                            {categories.map((category) => (
+                                <option key={category} value={category}>
+                                    {category}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
                         <label className="block text-sm font-medium mb-1">Source Code URL</label>
                         <input
                             type="text"
@@ -269,20 +317,6 @@ function ProjectEditor({ project, onSave, onCancel }) {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label className="block text-sm font-medium mb-1">Type</label>
-                        <select
-                            name="type"
-                            value={formData.type || "web"}
-                            onChange={handleChange}
-                            className="w-full bg-gray-800 text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
-                        >
-                            <option value="web">Web</option>
-                            <option value="mobile">Mobile</option>
-                            <option value="desktop">Desktop</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
                     <div className="flex items-center">
                         <input
                             type="checkbox"

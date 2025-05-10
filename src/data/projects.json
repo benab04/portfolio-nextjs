@@ -9,6 +9,7 @@
                 "DIY"
             ],
             "type": "Hardware Project",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "An automated solar tracking system for optimal energy collection",
@@ -42,6 +43,7 @@
                 "Python"
             ],
             "type": "Machine Learning",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "A machine learning model for cancer prediction with interactive interface",
@@ -76,6 +78,7 @@
                 "Python"
             ],
             "type": "Web Application",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "Official website development with modern UI/UX design",
@@ -110,6 +113,7 @@
                 "Python"
             ],
             "type": "Deep Learning",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "A CNN-based handwritten digit recognition system with real-time prediction",
@@ -145,6 +149,7 @@
                 "CPLEX"
             ],
             "type": "Deep Learning",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "An AI-powered Sudoku solver using computer vision and constraint programming",
@@ -180,6 +185,7 @@
                 "RestAPI"
             ],
             "type": "Web Application",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "An AI-powered tool that converts algorithm descriptions into executable code",
@@ -213,6 +219,7 @@
                 "Python"
             ],
             "type": "Computer Vision",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "Real-time drone detection and tracking system using computer vision",
@@ -248,6 +255,7 @@
                 "Web Scraping"
             ],
             "type": "Freelance",
+            "category": "Internship",
             "brand": {
                 "name": "Marico Pvt. Limited",
                 "logo": "/images/marico_logo.png"
@@ -288,6 +296,7 @@
                 "Collaborative Filtering"
             ],
             "type": "National Science Week Hackathon",
+            "category": "Competition",
             "brand": null,
             "details": {
                 "overview": "A full-stack application for recommending optimal breadth courses using collaborative filtering",
@@ -323,6 +332,7 @@
                 "PyPI"
             ],
             "type": "Open Source",
+            "category": "Open Source",
             "brand": null,
             "details": {
                 "overview": "The django-attack-blocker package has decorator functions which can be used with different Django views to block attacks. It allows both temporary and permanent blocking of IP addresses.",
@@ -356,6 +366,7 @@
                 "NPM"
             ],
             "type": "Open Source",
+            "category": "Open Source",
             "brand": null,
             "details": {
                 "overview": "The astro3d package is a Three.js-based library for easily creating realistic, customizable 3D planets, moons, and satellites with textures and orbital simulations.",
@@ -389,6 +400,7 @@
                 "D3JS"
             ],
             "type": "Inter IIT Tech Meet 13.0",
+            "category": "Competition",
             "brand": {
                 "name": "Inter IIT Tech Meet 13.0",
                 "logo": "/images/interiittech13.jpeg"
@@ -427,6 +439,7 @@
                 "Arduino"
             ],
             "type": "Research Project",
+            "category": "Research",
             "brand": {
                 "name": "IIT Kharagpur",
                 "logo": "/images/iitkgp.png"
@@ -467,6 +480,7 @@
                 "Zoom SDK"
             ],
             "type": "Internship",
+            "category": "Internship",
             "brand": {
                 "name": "interwiu.com",
                 "logo": "/images/interwiu.jpeg"
@@ -502,6 +516,7 @@
                 "S&C"
             ],
             "type": "Incoming",
+            "category": "Internship",
             "brand": {
                 "name": "Accenture",
                 "logo": "/images/accenture.png"

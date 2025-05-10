@@ -8,11 +8,15 @@ export async function GET(request) {
 
         const { searchParams } = new URL(request.url);
         const type = searchParams.get('type');
+        const category = searchParams.get('category');
         const limit = parseInt(searchParams.get('limit')) || 100;
 
         const query = { show: true };
         if (type) {
             query.type = type;
+        }
+        if (category) {
+            query.category = category;
         }
 
         const projects = await Project.find(query)

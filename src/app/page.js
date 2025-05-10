@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons-react";
 import ProjectCard from "@/components/ProjectCard";
+import ProjectsSection from "@/components/ProjectsSection";
 import ContactForm from "@/components/ContactForm";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -19,7 +20,7 @@ export default function Home() {
     // Fetch projects from the API
     const loadProjects = async () => {
       try {
-        const data = await fetchProjects();
+        const data = await fetchProjects({});
         setProjects(data.projects);
       } catch (error) {
         console.error('Error loading projects:', error);
@@ -156,35 +157,13 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-4 relative">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="max-w-6xl mx-auto"
-        >
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-4xl font-bold text-center mb-12"
-          >
-            Projects
-          </motion.h2>
-
-          {loading ? (
-            <div className="flex justify-center">
-              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {projects.map((project) => (
-                <ProjectCard key={project._id || project.title} project={project} />
-              ))}
-            </div>
-          )}
-        </motion.div>
-      </section>
+      {loading ? (
+        <div className="py-20 flex justify-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+        </div>
+      ) : (
+        <ProjectsSection projects={projects} />
+      )}
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-white/5 relative">

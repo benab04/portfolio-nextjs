@@ -11,12 +11,19 @@ export async function fetchResume() {
     }
 }
 
-export async function fetchProjects(type = null, limit = 100) {
+export async function fetchProjects(options = {}) {
     try {
+        const { type, category, limit = 100 } = options;
         const params = new URLSearchParams();
+
         if (type) {
             params.append('type', type);
         }
+
+        if (category) {
+            params.append('category', category);
+        }
+
         if (limit) {
             params.append('limit', limit.toString());
         }

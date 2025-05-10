@@ -12,6 +12,11 @@ const ProjectSchema = new mongoose.Schema({
     image: String,
     keywords: [String],
     type: String,
+    category: {
+        type: String,
+        enum: ['Internship', 'Research', 'Open Source', 'Competition', 'Self Project'],
+        default: 'Self Project'
+    },
     brand: {
         name: String,
         logo: String
@@ -48,5 +53,6 @@ const ProjectSchema = new mongoose.Schema({
 ProjectSchema.index({ type: 1 });
 ProjectSchema.index({ show: 1 });
 ProjectSchema.index({ createdAt: -1 });
+ProjectSchema.index({ category: 1 }); // Add index for category
 
 export default mongoose.models.Project || mongoose.model('Project', ProjectSchema); 
