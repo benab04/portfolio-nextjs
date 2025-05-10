@@ -123,7 +123,7 @@ const ProjectCard = ({ project }) => {
                                                 className="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors text-sm"
                                             >
                                                 <IconExternalLink size={16} />
-                                                <span>Live Demo</span>
+                                                <span>Link</span>
                                             </a>
                                         )}
                                         {project.links.source && (
