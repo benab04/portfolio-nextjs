@@ -9,6 +9,7 @@
                 "DIY"
             ],
             "type": "Hardware Project",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "An automated solar tracking system for optimal energy collection",
@@ -42,6 +43,7 @@
                 "Python"
             ],
             "type": "Machine Learning",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "A machine learning model for cancer prediction with interactive interface",
@@ -63,7 +65,7 @@
                 "deployed": "https://cancer-predict-benab04.streamlit.app/",
                 "source": "https://github.com/benab04/cancer-predict-streamlit"
             },
-            "show": true
+            "show": false
         },
         {
             "title": "SBRC Website",
@@ -76,6 +78,7 @@
                 "Python"
             ],
             "type": "Web Application",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "Official website development with modern UI/UX design",
@@ -110,6 +113,7 @@
                 "Python"
             ],
             "type": "Deep Learning",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "A CNN-based handwritten digit recognition system with real-time prediction",
@@ -131,7 +135,7 @@
                 "deployed": "https://digit-recognition-benab04.streamlit.app/",
                 "source": "https://github.com/benab04/digit-recognition-streamlit"
             },
-            "show": true
+            "show": false
         },
         {
             "title": "Sudoku Solver",
@@ -145,6 +149,7 @@
                 "CPLEX"
             ],
             "type": "Deep Learning",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "An AI-powered Sudoku solver using computer vision and constraint programming",
@@ -180,6 +185,7 @@
                 "RestAPI"
             ],
             "type": "Web Application",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "An AI-powered tool that converts algorithm descriptions into executable code",
@@ -213,6 +219,7 @@
                 "Python"
             ],
             "type": "Computer Vision",
+            "category": "Self Project",
             "brand": null,
             "details": {
                 "overview": "Real-time drone detection and tracking system using computer vision",
@@ -248,6 +255,7 @@
                 "Web Scraping"
             ],
             "type": "Freelance",
+            "category": "Self Project",
             "brand": {
                 "name": "Marico Pvt. Limited",
                 "logo": "/images/marico_logo.png"
@@ -288,6 +296,7 @@
                 "Collaborative Filtering"
             ],
             "type": "National Science Week Hackathon",
+            "category": "Competition",
             "brand": null,
             "details": {
                 "overview": "A full-stack application for recommending optimal breadth courses using collaborative filtering",
@@ -323,6 +332,7 @@
                 "PyPI"
             ],
             "type": "Open Source",
+            "category": "Open Source",
             "brand": null,
             "details": {
                 "overview": "The django-attack-blocker package has decorator functions which can be used with different Django views to block attacks. It allows both temporary and permanent blocking of IP addresses.",
@@ -356,6 +366,7 @@
                 "NPM"
             ],
             "type": "Open Source",
+            "category": "Open Source",
             "brand": null,
             "details": {
                 "overview": "The astro3d package is a Three.js-based library for easily creating realistic, customizable 3D planets, moons, and satellites with textures and orbital simulations.",
@@ -389,6 +400,7 @@
                 "D3JS"
             ],
             "type": "Inter IIT Tech Meet 13.0",
+            "category": "Competition",
             "brand": {
                 "name": "Inter IIT Tech Meet 13.0",
                 "logo": "/images/interiittech13.jpeg"
@@ -427,6 +439,7 @@
                 "Arduino"
             ],
             "type": "Research Project",
+            "category": "Research",
             "brand": {
                 "name": "IIT Kharagpur",
                 "logo": "/images/iitkgp.png"
@@ -456,6 +469,47 @@
             "show": true
         },
         {
+            "title": "Stock Market Simulator",
+            "description": "Developed a real time stock market simulator with NextJS where users can buy and sell stocks, view their portfolio, and track market trends.",
+            "image": "/images/stock_market_simulator.png",
+            "keywords": [
+                "NextJS",
+                "D3JS",
+                "MongoDB",
+                "Server-Sent Events",
+                "Web Workers"
+            ],
+            "type": "Freelance",
+            "category": "Self Project",
+            "brand": {
+                "name": "Xavier's Finance Community",
+                "logo": "/images/xfc.jpeg"
+            },
+            "details": {
+                "overview": "A real-time stock market simulator with portfolio management and market tracking",
+                "role": "Full Stack Developer",
+                "duration": "June 2025",
+                "technologies": [
+                    "NextJS",
+                    "D3JS",
+                    "MongoDB",
+                    "Server-Sent Events",
+                    "Web Workers"
+                ],
+                "highlights": [
+                    "Market engine to recalculate stock prices every 30 seconds",
+                    "Interactive candlestick charts with D3JS for stock prices",
+                    "Single source of truth with Market Web Workers and Server-Sent Events",
+                    "View past order history and current PnL in the portfolio"
+                ]
+            },
+            "links": {
+                "deployed": "https://gameoftrades.vercel.app/",
+                "source": null
+            },
+            "show": true
+        },
+        {
             "title": "Full Stack Development Internship",
             "description": "Developed a comprehensive video conferencing solution using Zoom's Video SDK",
             "image": "/images/interwiu_work.png",
@@ -467,6 +521,7 @@
                 "Zoom SDK"
             ],
             "type": "Internship",
+            "category": "Internship",
             "brand": {
                 "name": "interwiu.com",
                 "logo": "/images/interwiu.jpeg"
@@ -502,6 +557,7 @@
                 "S&C"
             ],
             "type": "Incoming",
+            "category": "Internship",
             "brand": {
                 "name": "Accenture",
                 "logo": "/images/accenture.png"
