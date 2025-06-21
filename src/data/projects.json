@@ -498,13 +498,13 @@
                 ],
                 "highlights": [
                     "Market engine to recalculate stock prices every 30 seconds",
-                    "Interactive candlestick charts with D3JS for stock prices",
+                    "Candlestick charts with D3JS for 5min, 30min, and 2hr intervals",
                     "Single source of truth with Market Web Workers and Server-Sent Events",
                     "View past order history and current PnL in the portfolio"
                 ]
             },
             "links": {
-                "deployed": "https://gameoftrades.vercel.app/",
+                "deployed": "https://gameoftrades.onrender.com/",
                 "source": null
             },
             "show": true
