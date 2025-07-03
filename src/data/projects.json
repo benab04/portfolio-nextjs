@@ -390,6 +390,44 @@
             "show": true
         },
         {
+            "title": "AI Powered Cold Mailer",
+            "description": "The project utilizes Gemini API and a custom-built search library to generate personalized emails based on templates and Gmail API to send and track emails, all in a NextJS application.",
+            "image": "/images/cold_mailer.png",
+            "keywords": [
+                "Gemini API",
+                "Web Scraping",
+                "Gmail API",
+                "NextJS",
+                "MongoDB"
+            ],
+            "type": "Web Application",
+            "category": "Self Project",
+            "brand": null,
+            "details": {
+                "overview": "Personalized Cold Mailer with custom templates and email tracking",
+                "role": "Self Project",
+                "duration": "May 2025",
+                "technologies": [
+                    "Gemini API",
+                    "Web Scraping",
+                    "Gmail API",
+                    "NextJS",
+                    "MongoDB"
+                ],
+                "highlights": [
+                    "Upload Excel/CSV files of contact details of individuals",
+                    "Personalized emails based on templates through web scraping and Gemini API",
+                    "Send upto 300 emails/day using Gmail API",
+                    "Automatic classification of responses and send follow ups"
+                ]
+            },
+            "links": {
+                "deployed": "https://colab.research.google.com/drive/1QKrzUchqZYSHeToXNfTdFUv3wskLRMjs?usp=sharing",
+                "source": "https://github.com/benab04/Drone-Localization"
+            },
+            "show": true
+        },
+        {
             "title": "Dynamic Elemental Mapping on Moon",
             "description": "Interactive 3D moon model using Three.js, showcasing element maps and important sites, with toggleable satellite and main camera views.",
             "image": "/images/dynamicmappingofmoon_mapped.png",
@@ -425,46 +463,6 @@
             "links": {
                 "deployed": "https://lunar-surface-elemental-mapping.netlify.app/",
                 "source": ""
-            },
-            "show": true
-        },
-        {
-            "title": "Interfacial Tension Measurement GUI",
-            "description": "Developed a GUI-based system for calculating interfacial tension of pendant droplets",
-            "image": "/images/sric_gui.webp",
-            "keywords": [
-                "Python",
-                "PyQt5",
-                "OpenCV",
-                "Arduino"
-            ],
-            "type": "Research Project",
-            "category": "Research",
-            "brand": {
-                "name": "IIT Kharagpur",
-                "logo": "/images/iitkgp.png"
-            },
-            "details": {
-                "overview": "A comprehensive system for measuring interfacial tension using computer vision",
-                "role": "Research Intern",
-                "duration": "April 2024 - May 2024",
-                "technologies": [
-                    "Python",
-                    "PyQt5",
-                    "OpenCV",
-                    "Arduino",
-                    "Canny Edge Detection"
-                ],
-                "highlights": [
-                    "Redesigned Arduino circuit for industrial pressure sensor with moving average algorithm",
-                    "Developed PyQt5 GUI for real-time droplet analysis",
-                    "Implemented Canny edge detection for shape factor determination",
-                    "Created interactive UI controls for enhanced data accuracy"
-                ]
-            },
-            "links": {
-                "deployed": null,
-                "source": null
             },
             "show": true
         },
@@ -505,6 +503,46 @@
             },
             "links": {
                 "deployed": "https://gameoftrades.onrender.com/",
+                "source": null
+            },
+            "show": true
+        },
+        {
+            "title": "Interfacial Tension Measurement GUI",
+            "description": "Developed a GUI-based system for calculating interfacial tension of pendant droplets",
+            "image": "/images/sric_gui.webp",
+            "keywords": [
+                "Python",
+                "PyQt5",
+                "OpenCV",
+                "Arduino"
+            ],
+            "type": "Research Project",
+            "category": "Research",
+            "brand": {
+                "name": "IIT Kharagpur",
+                "logo": "/images/iitkgp.png"
+            },
+            "details": {
+                "overview": "A comprehensive system for measuring interfacial tension using computer vision",
+                "role": "Research Intern",
+                "duration": "April 2024 - May 2024",
+                "technologies": [
+                    "Python",
+                    "PyQt5",
+                    "OpenCV",
+                    "Arduino",
+                    "Canny Edge Detection"
+                ],
+                "highlights": [
+                    "Redesigned Arduino circuit for industrial pressure sensor with moving average algorithm",
+                    "Developed PyQt5 GUI for real-time droplet analysis",
+                    "Implemented Canny edge detection for shape factor determination",
+                    "Created interactive UI controls for enhanced data accuracy"
+                ]
+            },
+            "links": {
+                "deployed": null,
                 "source": null
             },
             "show": true
