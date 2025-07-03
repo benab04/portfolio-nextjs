@@ -416,14 +416,13 @@
                 ],
                 "highlights": [
                     "Upload Excel/CSV files of contact details of individuals",
-                    "Personalized emails based on templates through web scraping and Gemini API",
-                    "Send upto 300 emails/day using Gmail API",
-                    "Automatic classification of responses and send follow ups"
+                    "Personalized emails based on custom templates through web scraping and Gemini API",
+                    "Uses Gmail API to send upto 300 emails per day",
+                    "Automatic classification of responses and send follow up emails"
                 ]
             },
             "links": {
-                "deployed": "https://colab.research.google.com/drive/1QKrzUchqZYSHeToXNfTdFUv3wskLRMjs?usp=sharing",
-                "source": "https://github.com/benab04/Drone-Localization"
+                "deployed": "https://coldmailer-benab04.vercel.app/"
             },
             "show": true
         },
