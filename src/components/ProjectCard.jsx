@@ -11,8 +11,7 @@ const ProjectCard = ({ project }) => {
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="group relative bg-white/5 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 hover:border-purple-500/50 transition-all duration-300"
             onMouseEnter={() => setIsHovered(true)}
@@ -180,4 +179,4 @@ const ProjectCard = ({ project }) => {
     );
 };
 
-export default ProjectCard; 
+export default ProjectCard;

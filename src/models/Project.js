@@ -12,6 +12,11 @@ const ProjectSchema = new mongoose.Schema({
     image: String,
     keywords: [String],
     type: String,
+    category: {
+        type: String,
+        enum: ['project', 'competition', 'internship'],
+        default: 'project'
+    },
     brand: {
         name: String,
         logo: String

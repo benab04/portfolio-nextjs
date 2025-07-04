@@ -11,17 +11,23 @@ export async function fetchResume() {
     }
 }
 
-export async function fetchProjects(type = null, limit = 100) {
+export async function fetchProjects(type = null, limit = 100, category = null, show = true) {
     try {
         const params = new URLSearchParams();
+        params.append('show', show.toString());
         if (type) {
             params.append('type', type);
         }
         if (limit) {
             params.append('limit', limit.toString());
         }
+        if (category) {
+            params.append('category', category);
+        }
 
-        const url = `/api/projects${params.toString() ? `?${params.toString()}` : ''}`;
+        const url = `/api/projects/v1${params.toString() ? `?${params.toString()}` : ''}`;
+        console.log('Fetching projects from URL:', url);
+
         const response = await fetch(url);
 
         if (!response.ok) {

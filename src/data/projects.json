@@ -9,7 +9,7 @@
                 "DIY"
             ],
             "type": "Hardware Project",
-            "category": "Self Project",
+            "category": "project",
             "brand": null,
             "details": {
                 "overview": "An automated solar tracking system for optimal energy collection",
@@ -43,7 +43,7 @@
                 "Python"
             ],
             "type": "Machine Learning",
-            "category": "Self Project",
+            "category": "project",
             "brand": null,
             "details": {
                 "overview": "A machine learning model for cancer prediction with interactive interface",
@@ -78,7 +78,7 @@
                 "Python"
             ],
             "type": "Web Application",
-            "category": "Self Project",
+            "category": "project",
             "brand": null,
             "details": {
                 "overview": "Official website development with modern UI/UX design",
@@ -113,7 +113,7 @@
                 "Python"
             ],
             "type": "Deep Learning",
-            "category": "Self Project",
+            "category": "project",
             "brand": null,
             "details": {
                 "overview": "A CNN-based handwritten digit recognition system with real-time prediction",
@@ -149,7 +149,7 @@
                 "CPLEX"
             ],
             "type": "Deep Learning",
-            "category": "Self Project",
+            "category": "project",
             "brand": null,
             "details": {
                 "overview": "An AI-powered Sudoku solver using computer vision and constraint programming",
@@ -185,7 +185,7 @@
                 "RestAPI"
             ],
             "type": "Web Application",
-            "category": "Self Project",
+            "category": "project",
             "brand": null,
             "details": {
                 "overview": "An AI-powered tool that converts algorithm descriptions into executable code",
@@ -207,7 +207,7 @@
                 "deployed": "https://algorithm-code.netlify.app/",
                 "source": "https://github.com/benab04/Algorithm-Code-Generator-Frontend"
             },
-            "show": true
+            "show": false
         },
         {
             "title": "Drone Localization",
@@ -219,7 +219,7 @@
                 "Python"
             ],
             "type": "Computer Vision",
-            "category": "Self Project",
+            "category": "project",
             "brand": null,
             "details": {
                 "overview": "Real-time drone detection and tracking system using computer vision",
@@ -255,7 +255,7 @@
                 "Web Scraping"
             ],
             "type": "Freelance",
-            "category": "Self Project",
+            "category": "project",
             "brand": {
                 "name": "Marico Pvt. Limited",
                 "logo": "/images/marico_logo.png"
@@ -296,7 +296,7 @@
                 "Collaborative Filtering"
             ],
             "type": "National Science Week Hackathon",
-            "category": "Competition",
+            "category": "competition",
             "brand": null,
             "details": {
                 "overview": "A full-stack application for recommending optimal breadth courses using collaborative filtering",
@@ -332,7 +332,7 @@
                 "PyPI"
             ],
             "type": "Open Source",
-            "category": "Open Source",
+            "category": "project",
             "brand": null,
             "details": {
                 "overview": "The django-attack-blocker package has decorator functions which can be used with different Django views to block attacks. It allows both temporary and permanent blocking of IP addresses.",
@@ -366,7 +366,7 @@
                 "NPM"
             ],
             "type": "Open Source",
-            "category": "Open Source",
+            "category": "project",
             "brand": null,
             "details": {
                 "overview": "The astro3d package is a Three.js-based library for easily creating realistic, customizable 3D planets, moons, and satellites with textures and orbital simulations.",
@@ -401,7 +401,7 @@
                 "MongoDB"
             ],
             "type": "Web Application",
-            "category": "Self Project",
+            "category": "project",
             "brand": null,
             "details": {
                 "overview": "Personalized Cold Mailer with custom templates and email tracking",
@@ -437,7 +437,7 @@
                 "D3JS"
             ],
             "type": "Inter IIT Tech Meet 13.0",
-            "category": "Competition",
+            "category": "competition",
             "brand": {
                 "name": "Inter IIT Tech Meet 13.0",
                 "logo": "/images/interiittech13.jpeg"
@@ -477,7 +477,7 @@
                 "Web Workers"
             ],
             "type": "Freelance",
-            "category": "Self Project",
+            "category": "project",
             "brand": {
                 "name": "Xavier's Finance Community",
                 "logo": "/images/xfc.jpeg"
@@ -517,7 +517,7 @@
                 "Arduino"
             ],
             "type": "Research Project",
-            "category": "Research",
+            "category": "internship",
             "brand": {
                 "name": "IIT Kharagpur",
                 "logo": "/images/iitkgp.png"
@@ -558,7 +558,7 @@
                 "Zoom SDK"
             ],
             "type": "Internship",
-            "category": "Internship",
+            "category": "internship",
             "brand": {
                 "name": "interwiu.com",
                 "logo": "/images/interwiu.jpeg"
@@ -593,8 +593,8 @@
             "keywords": [
                 "S&C"
             ],
-            "type": "Incoming",
-            "category": "Internship",
+            "type": "Internship",
+            "category": "internship",
             "brand": {
                 "name": "Accenture",
                 "logo": "/images/accenture.png"
