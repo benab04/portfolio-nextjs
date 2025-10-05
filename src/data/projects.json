@@ -285,7 +285,7 @@
         },
         {
             "title": "Breadth Selection Tool",
-            "description": "Created a Full Stack app merging ReactJS, Firebase, and Django to recommend optimal breadth courses, employing collaborative filtering and search algorithms, and offering interactive UI for weighted preferences.",
+            "description": "Second Position out of 50+ teams, conducted by KodeinKGP, Technology Students' Gymkhana, IIT Kharagpur as part of National Science Week 2024.",
             "image": "/images/Breadth.png",
             "keywords": [
                 "ReactJS",
@@ -297,7 +297,10 @@
             ],
             "type": "National Science Week Hackathon",
             "category": "competition",
-            "brand": null,
+            "brand": {
+                "name": "TSG",
+                "logo": "/images/gymkhanaLogo.png"
+            },
             "details": {
                 "overview": "A full-stack application for recommending optimal breadth courses using collaborative filtering",
                 "role": "Full Stack Developer",
@@ -427,8 +430,8 @@
             "show": true
         },
         {
-            "title": "Dynamic Elemental Mapping on Moon",
-            "description": "Interactive 3D moon model using Three.js, showcasing element maps and important sites, with toggleable satellite and main camera views.",
+            "title": "Dynamic Elemental Mapping on Moon - ISRO PS",
+            "description": "Silver Medal in ISRO High Preparation Problem Statement out of 23 IITs, contributing to fourth consecutive Overall Gold for IIT Kharagpur",
             "image": "/images/dynamicmappingofmoon_mapped.png",
             "keywords": [
                 "ThreeJS",
@@ -564,7 +567,7 @@
                 "logo": "/images/interwiu.jpeg"
             },
             "details": {
-                "overview": "A full-featured video conferencing module with real-time communication capabilities",
+                "overview": "A scalable video conferencing module with real-time communication capabilities",
                 "role": "Full Stack Developer Intern",
                 "duration": "June 2024 - December 2024",
                 "technologies": [
@@ -587,11 +590,17 @@
             "show": true
         },
         {
-            "title": "Strategy and Consulting Internship",
-            "description": "Incoming Summer Intern at Accenture",
+            "title": "Management Consulting Delivery Associate",
+            "description": "Summer Internship (PPO)",
             "image": "/images/accenture_project.webp",
             "keywords": [
-                "S&C"
+                "Strategy",
+                "Consulting",
+                "SAP S/4 HANA",
+                "SAP EHS/HSE",
+                "JIRA",
+                "SAP Signavio",
+                "Digital Transformation"
             ],
             "type": "Internship",
             "category": "internship",
@@ -599,9 +608,28 @@
                 "name": "Accenture",
                 "logo": "/images/accenture.png"
             },
-            "details": null,
+            "details": {
+                "overview": "Contributed to SAP S/4 HANA implementation and digital transformation for a leading pharmaceutical client",
+                "role": "Management Consulting Delivery Associate Intern",
+                "duration": "May 2025 - July 2025",
+                "technologies": [
+                    "Strategy",
+                    "Consulting",
+                    "SAP S/4 HANA",
+                    "JIRA",
+                    "SAP Signavio",
+                    "Digital Transformation"
+                ],
+                "highlights": [
+                    "Contributed to SAP S/4 HANA implementation project for EHS/HSE modules and integration with SAP and non-SAP systems for a leading pharmaceutical client",
+                    "Designed comprehensive architectural blueprints, scalable data models, and automated sustainability reporting workflows to enhance Product Compliance and Operational EHS visibility",
+                    "Evaluated integration strategies of SAP Datasphere and Databricks with S/4 HANA for data migration and global rollouts",
+                    "Performed technical feasibility analysis of 5+ legacy system integrations, identifying RICEFWs through Fit-Gap analyses and recommended API-first solutions to reduce business disruption",
+                    "Delivered stakeholder workshops and data lake prototypes, driving alignment across business and IT teams for EHS adoption"
+                ]
+            },
             "links": {
-                "deployed": null,
+                "deployed": "https://drive.google.com/file/d/13UAaI3e7KybIoOyyhcHVKuonUtNNsgrj/view?usp=sharing",
                 "source": null
             },
             "show": true

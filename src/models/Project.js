@@ -21,6 +21,10 @@ const ProjectSchema = new mongoose.Schema({
         name: String,
         logo: String
     },
+    additionalImages: [{
+        name: String,
+        logo: String
+    }],
     details: {
         overview: String,
         role: String,
