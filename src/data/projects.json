@@ -220,7 +220,10 @@
             ],
             "type": "Computer Vision",
             "category": "project",
-            "brand": null,
+            "brand": {
+                "name": "ARK",
+                "logo": "/images/ark.png"
+            },
             "details": {
                 "overview": "Real-time drone detection and tracking system using computer vision",
                 "role": "Self Project",
