@@ -66,11 +66,11 @@ export default function Home() {
     setShowOlderProjects(false);
     // Scroll to competitions section after hiding older projects
     setTimeout(() => {
-      const competitionsSection = document.getElementById('competitions');
-      if (competitionsSection) {
-        competitionsSection.scrollIntoView({
+      const scrollBackTarget = document.getElementById('moreProjectsButton');
+      if (scrollBackTarget) {
+        scrollBackTarget.scrollIntoView({
           behavior: 'smooth',
-          block: 'start'
+          block: 'center'
         });
       }
     }, 100); // Small delay to ensure the DOM has updated
@@ -247,6 +247,13 @@ export default function Home() {
         sectionId="internships"
       />
 
+      {/* Competitions Section */}
+      <CategorySection
+        title="Competitions"
+        items={competitions}
+        sectionId="competitions"
+      />
+
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
@@ -287,6 +294,7 @@ export default function Home() {
               {/* View Older Projects Button */}
               {!showOlderProjects && (
                 <motion.div
+                  id="moreProjectsButton"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.1 }}
@@ -400,12 +408,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Competitions Section */}
-      <CategorySection
-        title="Competitions"
-        items={competitions}
-        sectionId="competitions"
-      />
+
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-white/5 relative">

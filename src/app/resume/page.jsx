@@ -196,10 +196,26 @@ export default function Resume() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent"
+                    className="text-4xl font-bold text-center mb-6 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent"
                 >
                     Resume
                 </motion.h1>
+
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="flex justify-left mb-12"
+                >
+                    <a
+                        href="https://drive.google.com/file/d/147TzXMZSqsRa9d_QVlyzXJO51S0MEApf/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-2 bg-purple-500 hover:bg-purple-600 transition-colors duration-200 rounded-lg text-white font-semibold flex items-center gap-2"
+                    >
+                        View PDF
+                    </a>
+                </motion.div>
 
                 <ResumeSection title="Education" icon={IconSchool} items={resumeData.education} />
                 <ResumeSection title="Experience" icon={IconBriefcase} items={resumeData.experience} />
