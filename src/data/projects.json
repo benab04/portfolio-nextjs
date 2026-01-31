@@ -472,6 +472,51 @@
             "show": true
         },
         {
+            "title": "Re-Imagined Photoshop for 2030 using AI - Adobe PS",
+            "description": "Gold Position in Adobe Problem Statement, for the most innovative solution contributing to the fifth consecutive  gold for IIT Kharagpur",
+            "image": "/images/photoshop2030.png",
+            "keywords": [
+                "React Native",
+                "Expo",
+                "Fast API",
+                "MLOPs",
+                "AWS EC2",
+                "LangGraph",
+                "Modal H100"
+            ],
+            "type": "Inter IIT Tech Meet 14.0",
+            "category": "competition",
+            "brand": {
+                "name": "Adobe",
+                "logo": "/images/adobe.png"
+            },
+            "details": {
+                "overview": "An mobile-first approach to re-imagine Photoshop for 2030 using AI Workflows",
+                "role": "Development Team Captain",
+                "duration": "October 2025 - December 2025",
+                "technologies": [
+                    "Expo ",
+                    "React Native",
+                    "Fast API",
+                    "MLOPs",
+                    "AWS EC2",
+                    "LangGraph",
+                    "Modal H100"
+                ],
+                "highlights": [
+                    "Developed an AI image editing system with natural-language transformations, sketch-to-image conversion, and style replication",
+                    "Implemented semantic layer separation and drag-and-drop object editing with seamless blending",
+                    "Built precision controls for edit strength and smart suggestions based on image context",
+                    "Automated poster creation, turning rough prompts into polished, ready-to-use designs"
+                ]
+            },
+            "links": {
+                "deployed": "",
+                "source": ""
+            },
+            "show": true
+        },
+        {
             "title": "Stock Market Simulator",
             "description": "Developed a real time stock market simulator with NextJS where users can buy and sell stocks, view their portfolio, and track market trends.",
             "image": "/images/stock_market_simulator.png",
