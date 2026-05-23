@@ -142,7 +142,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl md:text-2xl text-gray-300 mb-8"
             >
-              Full Stack Developer & ML Enthusiast
+              Applied Machine Learning Engineer
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -197,7 +197,7 @@ export default function Home() {
                 className="relative w-full h-full"
               >
                 <Image
-                  src="/images/profile.jpg"
+                  src="/images/profile.png"
                   alt="Ben Abraham Biju"
                   fill
                   className="object-cover rounded-full border-4 border-white/10"

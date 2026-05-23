@@ -487,8 +487,8 @@
             "type": "Inter IIT Tech Meet 14.0",
             "category": "competition",
             "brand": {
-                "name": "Adobe",
-                "logo": "/images/adobe_2.svg"
+                "name": "",
+                "logo": ""
             },
             "details": {
                 "overview": "An mobile-first approach to re-imagine Photoshop for 2030 using AI Workflows",
